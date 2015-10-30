@@ -1,0 +1,528 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Thu Oct 29 16:40:58 2015
+# Process ID: 7108
+# Current directory: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1
+# Command line: vivado.exe -log SCOPE_TOP.vds -mode batch -messageDb vivado.pb -notrace -source SCOPE_TOP.tcl
+# Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1/SCOPE_TOP.vds
+# Journal file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SCOPE_TOP.tcl -notrace
+Command: synth_design -top SCOPE_TOP -part xc7a35tcpg236-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 260.383 ; gain = 89.203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SCOPE_TOP' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
+INFO: [Synth 8-3491] module 'clk_wiz_0_clk_wiz' declared at 'C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:74' bound to instance 'U0' of component 'clk_wiz_0_clk_wiz' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:83]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 9.375000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'mmcm_adv_inst' to cell 'MMCME2_ADV' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:125]
+INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:187]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:194]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (1#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (2#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'vga_ctrl' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'vga_ctrl' (3#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/vga_ctrl.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ADC_sampler' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v:23]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v:52]
+INFO: [Synth 8-638] synthesizing module 'XADC' [D:/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:44704]
+	Parameter INIT_40 bound to: 16'b0000000000010110 
+	Parameter INIT_41 bound to: 16'b0011000100001111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000100000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: f:/Teaching/NUS/TA/EE2020/Lab/S1AY2015_16/Work/oscillo/proto_REV5/proto.srcs/sources_1/ip/xadc_wiz_0_1/xadc_wiz_0/simulation/functional/design.txt - type: string 
+INFO: [Synth 8-256] done synthesizing module 'XADC' (4#1) [D:/Xilinx/Vivado/2015.3/scripts/rt/data/unisim_comp.v:44704]
+INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (5#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v:52]
+INFO: [Synth 8-256] done synthesizing module 'ADC_sampler' (6#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (7#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v:23]
+INFO: [Synth 8-638] synthesizing module 'switch_debouncer' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:23]
+	Parameter on bound to: 1 - type: integer 
+	Parameter idle bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'switch_debouncer' (8#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v:23]
+INFO: [Synth 8-638] synthesizing module 'FSM_inc_dec' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:23]
+	Parameter hold bound to: 2'b00 
+	Parameter increase bound to: 2'b10 
+	Parameter decrease bound to: 2'b01 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:45]
+INFO: [Synth 8-4471] merging register 'ctrl_reg[1:0]' into 'state_reg[1:0]' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:63]
+INFO: [Synth 8-256] done synthesizing module 'FSM_inc_dec' (9#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:23]
+WARNING: [Synth 8-3848] Net TEMP_MEM[1279] in module/entity SCOPE_TOP does not have driver. [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:265]
+INFO: [Synth 8-256] done synthesizing module 'SCOPE_TOP' (10#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port btnC
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 367.012 ; gain = 195.832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 367.012 ; gain = 195.832
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcpg236-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/constrs_1/imports/skeleton_sources/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/constrs_1/imports/skeleton_sources/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/constrs_1/imports/skeleton_sources/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SCOPE_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SCOPE_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 665.895 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:47]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SCOPE_TOP__GB0 |           1|     33714|
+|2     |SCOPE_TOP__GB1 |           1|      7464|
+|3     |SCOPE_TOP__GB2 |           1|      9109|
+|4     |SCOPE_TOP__GB3 |           1|      4776|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 2561  
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SCOPE_TOP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 2560  
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module switch_debouncer__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module switch_debouncer__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module FSM_inc_dec 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module switch_debouncer__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module switch_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ADC_sampler 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module vga_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:17 ; elapsed = 00:01:18 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
+WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port btnC
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:01:28 ; elapsed = 00:01:29 . Memory (MB): peak = 665.895 ; gain = 494.715
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SCOPE_TOP__GB0 |           1|     33714|
+|2     |SCOPE_TOP__GB1 |           1|      7464|
+|3     |SCOPE_TOP__GB2 |           1|      7987|
+|4     |SCOPE_TOP__GB3 |           1|      4776|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_2/\LOAD_VALUE_SUBSAMPLE_reg[18] ' (FD) to 'i_2/\LOAD_VALUE_SUBSAMPLE_reg[17] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\LOAD_VALUE_SUBSAMPLE_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_BLUE_reg[0] ' (FD) to 'i_2/\VGA_BLUE_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_BLUE_reg[1] ' (FD) to 'i_2/\VGA_BLUE_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_GREEN_reg[0] ' (FD) to 'i_2/\VGA_GREEN_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_GREEN_reg[1] ' (FD) to 'i_2/\VGA_GREEN_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_RED_reg[0] ' (FD) to 'i_2/\VGA_RED_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_RED_reg[1] ' (FD) to 'i_2/\VGA_RED_reg[2] '
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/p_0_out_inferred/\triggerLevel_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/p_0_out_inferred/\triggerLevel_reg[1] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:36 ; elapsed = 00:01:36 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:36 ; elapsed = 00:01:36 . Memory (MB): peak = 665.895 ; gain = 494.715
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SCOPE_TOP__GB0 |           1|     28593|
+|2     |SCOPE_TOP__GB1 |           1|      7464|
+|3     |SCOPE_TOP__GB2 |           1|      6529|
+|4     |SCOPE_TOP__GB3 |           1|      4776|
++------+---------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:46 ; elapsed = 00:01:46 . Memory (MB): peak = 665.895 ; gain = 494.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 687.465 ; gain = 516.285
+---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 687.465 ; gain = 516.285
+
+Report RTL Partitions: 
++------+---------------+------------+----------+
+|      |RTL Partition  |Replication |Instances |
++------+---------------+------------+----------+
+|1     |SCOPE_TOP__GB0 |           1|     28593|
+|2     |SCOPE_TOP__GB1 |           1|      7464|
+|3     |SCOPE_TOP__GB2 |           1|      6529|
+|4     |SCOPE_TOP__GB3 |           1|      4776|
++------+---------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 687.465 ; gain = 516.285
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:00 ; elapsed = 00:02:01 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:03 ; elapsed = 00:02:04 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:03 ; elapsed = 00:02:04 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:06 ; elapsed = 00:02:06 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:06 ; elapsed = 00:02:06 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     4|
+|2     |CARRY4     |    82|
+|3     |LUT1       |   154|
+|4     |LUT2       |   125|
+|5     |LUT3       |  5197|
+|6     |LUT4       |   127|
+|7     |LUT5       |    99|
+|8     |LUT6       |  5503|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |  2720|
+|11    |MUXF8      |  1344|
+|12    |XADC       |     1|
+|13    |FDRE       | 20712|
+|14    |LD         |     2|
+|15    |IBUF       |    10|
+|16    |OBUF       |    25|
+|17    |OBUFT      |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   | 36107|
+|2     |  BTND_DEBOUNCER        |switch_debouncer   |    70|
+|3     |  BTNL_DEBOUNCER        |switch_debouncer_0 |    71|
+|4     |  BTNR_DEBOUNCER        |switch_debouncer_1 |    70|
+|5     |  BTNU_DEBOUNCER        |switch_debouncer_2 |    76|
+|6     |  FSM1                  |FSM_inc_dec        |     9|
+|7     |  GEN_CLK_SUBSAMPLE     |clock_divider      |    72|
+|8     |  PIXEL_CLOCK_GENERATOR |clk_wiz_0          |     3|
+|9     |    U0                  |clk_wiz_0_clk_wiz  |     3|
+|10    |  SAMPLER               |ADC_sampler        |    23|
+|11    |    XLXI_7              |xadc_wiz_0         |     1|
+|12    |  VGA_CONTROLLER        |vga_ctrl           | 15149|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 738.715 ; gain = 567.535
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:48 ; elapsed = 00:02:00 . Memory (MB): peak = 738.715 ; gain = 252.957
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 738.715 ; gain = 567.535
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 738.715 ; gain = 551.840
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 738.715 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 29 16:43:20 2015...

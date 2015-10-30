@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1446108058">
+  <File Type="RDS-DCP" Name="SCOPE_TOP.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="SCOPE_TOP_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="SCOPE_TOP_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="SCOPE_TOP.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="SCOPE_TOP.vds"/>
+  <File Type="RDS-UTIL" Name="SCOPE_TOP_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="SCOPE_TOP_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="SCOPE_TOP_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/xadc_wiz_0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/xadc_wiz_0.v"/>
+        <Attr Name="ImportTime" Val="1443275648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1421897104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/ADC_sampler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/ADC_sampler.v"/>
+        <Attr Name="ImportTime" Val="1443780502"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/switch_debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/switch_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1443790128"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/vga_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1443768732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/FSM_inc_dec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/FSM_inc_dec.v"/>
+        <Attr Name="ImportTime" Val="1443791710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clock_divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clock_divider.v"/>
+        <Attr Name="ImportTime" Val="1443771968"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clk_wiz_0.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0.vhd"/>
+        <Attr Name="ImportTime" Val="1421897742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/SCOPE_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/SCOPE_TOP.v"/>
+        <Attr Name="ImportTime" Val="1443794484"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/test_switch_debouncer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/test_switch_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1443768376"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/test_clock_divider.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/test_clock_divider.v"/>
+        <Attr Name="ImportTime" Val="1443768362"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/singlePulseCircuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SCOPE_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/skeleton_sources/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1443793294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

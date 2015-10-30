@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1446108058">
+  <File Type="OPT-DCP" Name="SCOPE_TOP_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="SCOPE_TOP_routed.dcp"/>
+  <File Type="PA-TCL" Name="SCOPE_TOP.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="SCOPE_TOP_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="SCOPE_TOP_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="SCOPE_TOP_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SCOPE_TOP.hwdef"/>
+  <File Type="PWROPT-DCP" Name="SCOPE_TOP_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SCOPE_TOP_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="SCOPE_TOP_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SCOPE_TOP_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SCOPE_TOP_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SCOPE_TOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SCOPE_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SCOPE_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SCOPE_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SCOPE_TOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SCOPE_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="SCOPE_TOP_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SCOPE_TOP_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="SCOPE_TOP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="SCOPE_TOP_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="SCOPE_TOP.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="SCOPE_TOP_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="SCOPE_TOP_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="SCOPE_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SCOPE_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SCOPE_TOP_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="SCOPE_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="SCOPE_TOP_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SCOPE_TOP_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SCOPE_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SCOPE_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SCOPE_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="SCOPE_TOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="SCOPE_TOP_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SCOPE_TOP_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SCOPE_TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SCOPE_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="SCOPE_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="SCOPE_TOP.bit"/>
+  <File Type="BG-BIN" Name="SCOPE_TOP.bin"/>
+  <File Type="BITSTR-MSK" Name="SCOPE_TOP.msk"/>
+  <File Type="BITSTR-RBT" Name="SCOPE_TOP.rbt"/>
+  <File Type="BITSTR-NKY" Name="SCOPE_TOP.nky"/>
+  <File Type="BITSTR-BMM" Name="SCOPE_TOP_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SCOPE_TOP.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="SCOPE_TOP.sysdef"/>
+  <File Type="BG-BGN" Name="SCOPE_TOP.bgn"/>
+  <File Type="BG-DRC" Name="SCOPE_TOP.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/xadc_wiz_0.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/xadc_wiz_0.v"/>
+        <Attr Name="ImportTime" Val="1443275648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1421897104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/ADC_sampler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/ADC_sampler.v"/>
+        <Attr Name="ImportTime" Val="1443780502"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/switch_debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/switch_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1443790128"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/vga_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/vga_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1443768732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/FSM_inc_dec.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/FSM_inc_dec.v"/>
+        <Attr Name="ImportTime" Val="1443791710"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clock_divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clock_divider.v"/>
+        <Attr Name="ImportTime" Val="1443771968"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clk_wiz_0.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0.vhd"/>
+        <Attr Name="ImportTime" Val="1421897742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/SCOPE_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/SCOPE_TOP.v"/>
+        <Attr Name="ImportTime" Val="1443794484"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/test_switch_debouncer.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/test_switch_debouncer.v"/>
+        <Attr Name="ImportTime" Val="1443768376"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/test_clock_divider.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/test_clock_divider.v"/>
+        <Attr Name="ImportTime" Val="1443768362"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/singlePulseCircuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SCOPE_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/skeleton_sources/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1443793294"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

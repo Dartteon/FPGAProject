@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Wed Oct 21 10:37:12 2015
+# Process ID: 5356
+# Current directory: C:/Users/Dartteon/Desktop/ProjectFPGA
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7536 C:\Users\Dartteon\Desktop\ProjectFPGA\ProjectFPGA.xpr
+# Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/vivado.log
+# Journal file: C:/Users/Dartteon/Desktop/ProjectFPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1

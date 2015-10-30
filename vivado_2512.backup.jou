@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 08 17:07:29 2015
+# Process ID: 5048
+# Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/vivado.log
+# Journal file: C:/Users/Dartteon/Desktop/ProjectFPGA\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.xpr
