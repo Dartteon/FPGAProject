@@ -21,7 +21,7 @@
 
 
 module ADC_sampler(
-    
+
     input CLK,
     
     input vauxp6,

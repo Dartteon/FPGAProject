@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date              : Thu Oct 29 16:46:16 2015
+| Date              : Fri Oct 30 11:57:41 2015
 | Host              : MSI running 64-bit major release  (build 9200)
 | Command           : report_clock_utilization -file SCOPE_TOP_clock_utilization_routed.rpt
 | Design            : SCOPE_TOP
@@ -34,7 +34,7 @@ Table of Contents
 +-------+------+-----------+-----------+
 | Type  | Used | Available | Num Fixed |
 +-------+------+-----------+-----------+
-| BUFG  |    4 |        32 |         0 |
+| BUFG  |    5 |        32 |         0 |
 | BUFH  |    0 |        72 |         0 |
 | BUFIO |    0 |        20 |         0 |
 | MMCM  |    1 |         5 |         0 |
@@ -53,9 +53,10 @@ Table of Contents
 | Index | BUFG Cell                            | Net Name                                        |  BELs | Sites | Fixed |
 +-------+--------------------------------------+-------------------------------------------------+-------+-------+-------+
 |     1 | PIXEL_CLOCK_GENERATOR/U0/clkf_buf    | PIXEL_CLOCK_GENERATOR/U0/clkfbout_buf_clk_wiz_0 |     1 |     1 |    no |
-|     2 | PIXEL_CLOCK_GENERATOR/U0/clkout1_buf | PIXEL_CLOCK_GENERATOR/U0/clk_out1               |    71 |    48 |    no |
-|     3 | CLK_IBUF_BUFG_inst                   | CLK_IBUF_BUFG                                   |   179 |    52 |    no |
-|     4 | CLK_SUBSAMPLE_BUFG_inst              | CLK_SUBSAMPLE_BUFG                              | 20464 |  5105 |    no |
+|     2 | n_0_29665_BUFG_inst                  | n_0_29665_BUFG                                  |    46 |    34 |    no |
+|     3 | PIXEL_CLOCK_GENERATOR/U0/clkout1_buf | PIXEL_CLOCK_GENERATOR/U0/clk_out1               |    72 |    48 |    no |
+|     4 | CLK_IBUF_BUFG_inst                   | CLK_IBUF_BUFG                                   |   179 |    52 |    no |
+|     5 | CLK_SUBSAMPLE_BUFG_inst              | CLK_SUBSAMPLE_BUFG                              | 20464 |  5932 |    no |
 +-------+--------------------------------------+-------------------------------------------------+-------+-------+-------+
 
 
@@ -86,7 +87,8 @@ Table of Contents
 +-------+---------------------------+-------------------------------+------+-------+-------+
 | Index | Local Clk Src             | Net Name                      | BELs | Sites | Fixed |
 +-------+---------------------------+-------------------------------+------+-------+-------+
-|     1 | FSM1/nextState_reg[1]_i_2 | FSM1/nextState_reg[1]_i_2_n_0 |    2 |     1 |    no |
+|     1 | FSM1/nextState_reg[1]_i_2 | FSM1/nextState_reg[1]_i_2_n_1 |    2 |     2 |    no |
+|     2 | yBallPos_reg[11]_i_2      | yBallPos_reg[11]_i_2_n_1      |   12 |     3 |    no |
 +-------+---------------------------+-------------------------------+------+-------+-------+
 
 
@@ -98,12 +100,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3966 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4928 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3921 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 5192 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
-| X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1974 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |  733 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3156 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 4341 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3217 |  9600 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3961 | 12000 |    0 |  1800 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y2              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 3940 | 14400 |    0 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    2 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 | 2158 |  7600 |    0 |  1200 |    0 |    10 |    0 |     5 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites.
 
@@ -111,13 +113,12 @@ Table of Contents
 8. Net wise resources used in clock region X0Y0
 -----------------------------------------------
 
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
-| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |           Clock Net Name          |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
-| BUFG        | BUFHCE_X0Y9  |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    8 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
-| BUFG        | BUFHCE_X0Y10 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   16 |     0 |        0 | CLK_IBUF_BUFG                     |
-| BUFG        | BUFHCE_X0Y8  |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3942 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |           Clock Net Name          |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
+| BUFG        | BUFHCE_X0Y9 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   12 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
+| BUFG        | BUFHCE_X0Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3140 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 
 
 9. Net wise resources used in clock region X1Y0
@@ -127,9 +128,9 @@ Table of Contents
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                  Clock Net Name                 |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------+
 | BUFG        | BUFHCE_X1Y1 |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clkfbout_buf_clk_wiz_0 |
-| BUFG        | BUFHCE_X1Y9 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    9 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1               |
+| BUFG        | BUFHCE_X1Y9 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    4 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1               |
 | BUFG        | BUFHCE_X1Y0 |   no  |         1 |        0 |       0 |         0 |       0 |       0 |  107 |     0 |        0 | CLK_IBUF_BUFG                                   |
-| BUFG        | BUFHCE_X1Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 4810 |     0 |        0 | CLK_SUBSAMPLE_BUFG                              |
+| BUFG        | BUFHCE_X1Y8 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 4221 |     0 |        0 | CLK_SUBSAMPLE_BUFG                              |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------+
 
 
@@ -139,9 +140,9 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |           Clock Net Name          |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
-| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   41 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
-| BUFG        | BUFHCE_X0Y22 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   54 |     0 |        0 | CLK_IBUF_BUFG                     |
-| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3826 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
+| BUFG        | BUFHCE_X0Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   26 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
+| BUFG        | BUFHCE_X0Y23 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   70 |     0 |        0 | CLK_IBUF_BUFG                     |
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3117 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 
 
@@ -151,8 +152,8 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |           Clock Net Name          |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
-| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   11 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
-| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 5181 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
+| BUFG        | BUFHCE_X1Y21 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   16 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
+| BUFG        | BUFHCE_X1Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3912 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 
 
@@ -162,19 +163,20 @@ Table of Contents
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 | Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |           Clock Net Name          |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
-| BUFG        | BUFHCE_X0Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    2 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
-| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1972 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
+| BUFG        | BUFHCE_X0Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   10 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 3925 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
 +-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 
 
 13. Net wise resources used in clock region X1Y2
 ------------------------------------------------
 
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------+
-| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |   Clock Net Name   |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------+
-| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 733 |     0 |        0 | CLK_SUBSAMPLE_BUFG |
-+-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |           Clock Net Name          |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
+| BUFG        | BUFHCE_X1Y33 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    4 |     0 |        0 | PIXEL_CLOCK_GENERATOR/U0/clk_out1 |
+| BUFG        | BUFHCE_X1Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 2149 |     0 |        0 | CLK_SUBSAMPLE_BUFG                |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------+
 
 
 
@@ -182,7 +184,8 @@ Table of Contents
 set_property LOC BUFGCTRL_X0Y0 [get_cells CLK_IBUF_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y1 [get_cells CLK_SUBSAMPLE_BUFG_inst]
 set_property LOC BUFGCTRL_X0Y2 [get_cells PIXEL_CLOCK_GENERATOR/U0/clkout1_buf]
-set_property LOC BUFGCTRL_X0Y3 [get_cells PIXEL_CLOCK_GENERATOR/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y4 [get_cells PIXEL_CLOCK_GENERATOR/U0/clkf_buf]
+set_property LOC BUFGCTRL_X0Y3 [get_cells n_0_29665_BUFG_inst]
 
 # Location of IO Clock Primitives
 
@@ -206,7 +209,7 @@ set_property LOC IOB_X1Y26 [get_ports CLK]
 #startgroup
 create_pblock {CLKAG_CLK_IBUF_BUFG}
 add_cells_to_pblock [get_pblocks  {CLKAG_CLK_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=PIXEL_CLOCK_GENERATOR/U0/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="CLK_IBUF_BUFG"}]]]
-resize_pblock [get_pblocks {CLKAG_CLK_IBUF_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_CLK_IBUF_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "CLK_SUBSAMPLE_BUFG" driven by instance "CLK_SUBSAMPLE_BUFG_inst" located at site "BUFGCTRL_X0Y1"
@@ -216,16 +219,30 @@ add_cells_to_pblock [get_pblocks  {CLKAG_CLK_SUBSAMPLE_BUFG}] [get_cells -filter
 resize_pblock [get_pblocks {CLKAG_CLK_SUBSAMPLE_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
 #endgroup
 
-# Clock net "FSM1/nextState_reg[1]_i_2_n_0" driven by instance "FSM1/nextState_reg[1]_i_2" located at site "SLICE_X64Y21"
+# Clock net "FSM1/nextState_reg[1]_i_2_n_1" driven by instance "FSM1/nextState_reg[1]_i_2" located at site "SLICE_X65Y20"
 #startgroup
-create_pblock {CLKAG_FSM1/nextState_reg[1]_i_2_n_0}
-add_cells_to_pblock [get_pblocks  {CLKAG_FSM1/nextState_reg[1]_i_2_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="FSM1/nextState_reg[1]_i_2_n_0"}]]]
-resize_pblock [get_pblocks {CLKAG_FSM1/nextState_reg[1]_i_2_n_0}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+create_pblock {CLKAG_FSM1/nextState_reg[1]_i_2_n_1}
+add_cells_to_pblock [get_pblocks  {CLKAG_FSM1/nextState_reg[1]_i_2_n_1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="FSM1/nextState_reg[1]_i_2_n_1"}]]]
+resize_pblock [get_pblocks {CLKAG_FSM1/nextState_reg[1]_i_2_n_1}] -add {CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
 #endgroup
 
 # Clock net "PIXEL_CLOCK_GENERATOR/U0/clk_out1" driven by instance "PIXEL_CLOCK_GENERATOR/U0/clkout1_buf" located at site "BUFGCTRL_X0Y2"
 #startgroup
 create_pblock {CLKAG_PIXEL_CLOCK_GENERATOR/U0/clk_out1}
 add_cells_to_pblock [get_pblocks  {CLKAG_PIXEL_CLOCK_GENERATOR/U0/clk_out1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="PIXEL_CLOCK_GENERATOR/U0/clk_out1"}]]]
-resize_pblock [get_pblocks {CLKAG_PIXEL_CLOCK_GENERATOR/U0/clk_out1}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
+resize_pblock [get_pblocks {CLKAG_PIXEL_CLOCK_GENERATOR/U0/clk_out1}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "n_0_29665_BUFG" driven by instance "n_0_29665_BUFG_inst" located at site "BUFGCTRL_X0Y3"
+#startgroup
+create_pblock {CLKAG_n_0_29665_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_n_0_29665_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="n_0_29665_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_n_0_29665_BUFG}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0 CLOCKREGION_X1Y1:CLOCKREGION_X1Y1 CLOCKREGION_X1Y2:CLOCKREGION_X1Y2}
+#endgroup
+
+# Clock net "yBallPos_reg[11]_i_2_n_1" driven by instance "yBallPos_reg[11]_i_2" located at site "SLICE_X37Y46"
+#startgroup
+create_pblock {CLKAG_yBallPos_reg[11]_i_2_n_1}
+add_cells_to_pblock [get_pblocks  {CLKAG_yBallPos_reg[11]_i_2_n_1}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="yBallPos_reg[11]_i_2_n_1"}]]]
+resize_pblock [get_pblocks {CLKAG_yBallPos_reg[11]_i_2_n_1}] -add {CLOCKREGION_X1Y1:CLOCKREGION_X1Y1}
 #endgroup

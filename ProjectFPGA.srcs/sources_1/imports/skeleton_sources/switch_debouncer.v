@@ -44,25 +44,6 @@ module switch_debouncer(
                     COUNT <= (BTN_IN && ~COUNT[26]) ? (COUNT+1) : 0;
                     currentState <= ((BTN_IN) && (COUNT==0 || COUNT[26])) ? on : idle;
                 end
-/*
-                if (BTN_IN) begin 
-                    if (COUNT == 0) begin
-                        currentState <= on;
-                        COUNT <= COUNT+1;
-                    end
-                    else if (COUNT[26]) begin
-                        currentState <= on;
-                        COUNT <= 0;
-                    end
-                    else begin
-                        COUNT <= COUNT+1;
-                    end
-                end
-                
-                else begin
-                    COUNT <= 0;
-                end
-*/
         endcase
     end
     

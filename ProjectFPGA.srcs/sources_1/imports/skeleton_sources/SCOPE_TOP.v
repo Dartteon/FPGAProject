@@ -33,6 +33,7 @@ module SCOPE_TOP(
     input sw0,                  // special feature 1: point joiner to align points
     input sw1,                  // special feature 2: triggering
     input sw2,                  // special feature 3: RAINBOWS
+    input sw3,                  //special feature 4: BALLS
     
     input ADC_IN_P,             // differential +ve & -ve analog inputs to ADC
     input ADC_IN_N,  
@@ -276,7 +277,7 @@ module SCOPE_TOP(
     //          (use CLK_SUBSAMPLE)
 
     //To adjust trigger levels
-    reg [7:0] triggerLevel = 128;
+    reg [8:0] triggerLevel = 128;
     switch_debouncer BTNU_DEBOUNCER( CLK_MAIN, btnU, btnU_DB ) ;
     switch_debouncer BTND_DEBOUNCER( CLK_MAIN, btnD, btnD_DB ) ;
     always @ (posedge CLK) begin
@@ -385,14 +386,44 @@ module SCOPE_TOP(
         
     //-------------------------------------------------------------------------
     
-    //Special feature 4: Wave widener
+    //Special feature 4: Ball Game
+    
+//    reg [11:0] xBallPos = 640;
+//    reg [11:0] yBallPos = 900;
+    
+//    always @ (CLK_SUBSAMPLE) begin
+//        if (yBallPos > DISPLAY_MEM[xBallPos] + 10) begin
+//            yBallPos <= yBallPos - 1;
+//        end
+//        else begin
+//            if (xBallPos <1279 && DISPLAY_MEM[xBallPos] > DISPLAY_MEM[xBallPos+1]) begin
+//                xBallPos <= xBallPos + 1;
+//                yBallPos <= DISPLAY_MEM[xBallPos+1];
+//            end
+//            else if (xBallPos > 0 && DISPLAY_MEM[xBallPos] > DISPLAY_MEM[xBallPos-1]) begin
+//                xBallPos <= xBallPos - 1;
+//                yBallPos <= DISPLAY_MEM[xBallPos-1];
+//            end
+//        end
+//    end
+    
+//    wire CONDITION_FOR_BALL =
+//        (sw3 && (VGA_vertCoord > ((511+128) - 20 -yBallPos)) && (VGA_vertCoord < ((511+128) + 20 -yBallPos))
+//            && (VGA_horzCoord > xBallPos - 20) && (VGA_horzCoord < xBallPos + 20)) ? 1 : 0;
+//    wire[3:0] VGA_BALL = CONDITION_FOR_BALL ? 4'h7 : 0 ;
+    
+    //-------------------------------------------------------------------------
+    
+    //Special feature 5: DIGITS
+    
+    
     
     //-------------------------------------------------------------------------
     
     // COMBINE ALL OUTPUTS ON EACH CHANNEL
     wire[3:0] VGA_RED_CHAN = VGA_RED_GRID | VGA_RED_RAINBOW | VGA_RED_TRIGGER_LINE ;
     wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW ; 
-    wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_RAINBOW;  
+    wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_RAINBOW | VGA_BALL;  
 
 
     // CLOCK THEM OUT
