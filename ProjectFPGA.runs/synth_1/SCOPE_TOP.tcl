@@ -16,10 +16,11 @@ set_property target_language Verilog [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
 read_verilog -library xil_defaultlib {
   C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/xadc_wiz_0.v
-  C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v
+  C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/switch_debouncer_fast.v
   C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/switch_debouncer.v
   C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v
   C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v
+  C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/ADC_sampler.v
   C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v
 }
 read_vhdl -library xil_defaultlib {

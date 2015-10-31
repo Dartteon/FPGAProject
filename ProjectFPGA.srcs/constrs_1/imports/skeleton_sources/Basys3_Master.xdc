@@ -45,8 +45,8 @@ set_property PACKAGE_PIN W17 [get_ports {sw3}]
 	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[13]}]
 #set_property PACKAGE_PIN T1 [get_ports {sw[14]}]					
 	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[14]}]
-#set_property PACKAGE_PIN R2 [get_ports {sw[15]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[15]}]
+#set_property PACKAGE_PIN R2 [get_ports {sw15}]					
+#	set_property IOSTANDARD LVCMOS33 [get_ports {sw15}]
  
 
 ## LEDs

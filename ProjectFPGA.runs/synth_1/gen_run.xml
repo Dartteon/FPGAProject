@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1446176879">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1446279141">
   <File Type="RDS-DCP" Name="SCOPE_TOP.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="SCOPE_TOP_utilization_synth.pb"/>
@@ -13,6 +13,14 @@
   <File Type="VDS-TIMING-PB" Name="SCOPE_TOP_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0_clk_wiz.vhd"/>
+        <Attr Name="ImportTime" Val="1421897104"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/xadc_wiz_0.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="F:/skeleton_sources/xadc_wiz_0.v"/>
@@ -22,18 +30,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/clk_wiz_0_clk_wiz.vhd">
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/vga_ctrl.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0_clk_wiz.vhd"/>
-        <Attr Name="ImportTime" Val="1421897104"/>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/vga_ctrl.vhd"/>
+        <Attr Name="ImportTime" Val="1443768732"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/ADC_sampler.v">
+    <File Path="$PSRCDIR/sources_1/new/switch_debouncer_fast.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="F:/skeleton_sources/ADC_sampler.v"/>
-        <Attr Name="ImportTime" Val="1443780502"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -45,14 +51,6 @@
         <Attr Name="ImportTime" Val="1443790128"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/vga_ctrl.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="F:/skeleton_sources/vga_ctrl.vhd"/>
-        <Attr Name="ImportTime" Val="1443768732"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -79,6 +77,15 @@
         <Attr Name="ImportPath" Val="F:/skeleton_sources/clk_wiz_0.vhd"/>
         <Attr Name="ImportTime" Val="1421897742"/>
         <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/ADC_sampler.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="F:/skeleton_sources/ADC_sampler.v"/>
+        <Attr Name="ImportTime" Val="1443780502"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
@@ -112,6 +119,14 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/singlePulseCircuit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DISPLAY_DIGIT.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

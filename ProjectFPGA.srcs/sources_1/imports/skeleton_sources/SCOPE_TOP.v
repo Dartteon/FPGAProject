@@ -33,7 +33,7 @@ module SCOPE_TOP(
     input sw0,                  // special feature 1: point joiner to align points
     input sw1,                  // special feature 2: triggering
     input sw2,                  // special feature 3: RAINBOWS
-    input sw3,                  //special feature 4: BALLS
+    input sw3,                  //special feature 4: aim mode
     
     input ADC_IN_P,             // differential +ve & -ve analog inputs to ADC
     input ADC_IN_N,  
@@ -156,7 +156,7 @@ module SCOPE_TOP(
             LED_DEBUG <= !LED_DEBUG ;
         end
      assign led[8] = LED_DEBUG ; 
-*/        
+ */    
                
     //-------------------------------------------------------------------------
                                     
@@ -278,16 +278,16 @@ module SCOPE_TOP(
 
     //To adjust trigger levels
     reg [8:0] triggerLevel = 128;
-    switch_debouncer BTNU_DEBOUNCER( CLK_MAIN, btnU, btnU_DB ) ;
-    switch_debouncer BTND_DEBOUNCER( CLK_MAIN, btnD, btnD_DB ) ;
+    switch_debouncer_fast BTNU_DEBOUNCER( CLK_MAIN, btnU, btnU_DB ) ;
+    switch_debouncer_fast BTND_DEBOUNCER( CLK_MAIN, btnD, btnD_DB ) ;
     always @ (posedge CLK) begin
-        if (btnU_DB)
-            triggerLevel <= triggerLevel + 8;
-        else if (btnD_DB)
-            triggerLevel <= triggerLevel - 8;
+        if (!sw3 && btnU_DB)
+            triggerLevel <= triggerLevel + 1;
+        else if (!sw3 && btnD_DB)
+            triggerLevel <= triggerLevel - 1;
     end
-    wire CONDITION_FOR_TRIGGER_LINE = (VGA_vertCoord == ((511+128) - triggerLevel)) ? 1 : 0;
-    wire[3:0] VGA_RED_TRIGGER_LINE = CONDITION_FOR_TRIGGER_LINE ? 4'h7 : 0 ;
+    wire CONDITION_FOR_TRIGGER_LINE = (sw1 && (VGA_vertCoord == ((511+128) - triggerLevel))) ? 1 : 0;
+    wire[3:0] VGA_TRIGGER_LINE = CONDITION_FOR_TRIGGER_LINE ? 4'h7 : 0 ;
     
     
     
@@ -386,7 +386,77 @@ module SCOPE_TOP(
         
     //-------------------------------------------------------------------------
     
-    //Special feature 4: Ball Game
+    //Special feature 4: Targeting
+    switch_debouncer BTNC_DEBOUNCER( CLK_MAIN, btnC, btnC_DB ) ;
+    reg [1:0] currentTarget;
+    
+    reg [11:0] currentxPos = (640);
+    reg [7:0] currentyPos = (540);
+    
+    reg [11:0] target1xPos = 20;
+    reg [7:0] target1yPos = 20;
+    
+    reg [11:0] target2xPos = 20;
+    reg [7:0] target2yPos = 20;
+    
+    reg [11:0] target3xPos = 20;
+    reg [7:0] target3yPos = 20;
+    
+    reg [11:0] target4xPos = 20;
+    reg [7:0] target4yPos = 20;
+    
+    always @ (posedge CLK) begin
+        if (sw3) begin
+            if (btnU_DB)
+                currentxPos = currentxPos + 1;
+            else if (btnD_DB)
+                currentxPos = currentxPos - 1;
+                
+            currentyPos = DISPLAY_MEM[currentxPos];
+            
+            if (btnC_DB) begin
+                case (currentTarget)
+                    2'b00: begin
+                        target1xPos <= currentxPos;
+                        target1yPos <= currentyPos;
+                    end
+                    2'b01: begin
+                        target2xPos <= currentxPos;
+                        target2yPos <= currentyPos;
+                    end
+                    2'b10: begin
+                        target3xPos <= currentxPos;
+                        target3yPos <= currentyPos;
+                    end
+                    2'b11: begin
+                        target4xPos <= currentxPos;
+                        target4yPos <= currentyPos;
+                    end
+                endcase
+                currentTarget <= currentTarget + 1;              
+            end
+        end
+    end
+    
+    wire CONDITION_FOR_TARGET_CURRENT = (sw3 && ((VGA_vertCoord == ((511+128) - currentyPos)) || (VGA_horzCoord == currentxPos))) ? 1 : 0;
+    wire[3:0] VGA_TARGET_CURRENT = CONDITION_FOR_TARGET_CURRENT ? 4'h7 : 0 ;
+    //color: RED
+    
+    wire CONDITION_FOR_TARGET_1 = (sw3 && ((VGA_vertCoord == ((511+128) - target1yPos)) || (VGA_horzCoord == target1xPos))) ? 1 : 0 ;
+    wire[3:0] VGA_TARGET_1 = CONDITION_FOR_TARGET_1 ? 4'h7 : 0 ;
+    //color: BLUE + RED (purple)
+    
+    wire CONDITION_FOR_TARGET_2 = (sw3 && ((VGA_vertCoord == ((511+128) - target2yPos)) || (VGA_horzCoord == target2xPos))) ? 1 : 0 ;
+    wire[3:0] VGA_TARGET_2 = CONDITION_FOR_TARGET_2 ? 4'h7 : 0 ;
+    //color: BLUE + GREEN (cyan)
+    
+    wire CONDITION_FOR_TARGET_3 = (sw3 && ((VGA_vertCoord == ((511+128) - target3yPos)) || (VGA_horzCoord == target3xPos))) ? 1 : 0 ;
+    wire[3:0] VGA_TARGET_3 = CONDITION_FOR_TARGET_3 ? 4'h7 : 0 ;
+    //color: RED + GREEN (orange)
+    
+    wire CONDITION_FOR_TARGET_4 = (sw3 && ((VGA_vertCoord == ((511+128) - target4yPos)) || (VGA_horzCoord == target4xPos))) ? 1 : 0 ;
+    wire[3:0] VGA_TARGET_4 = CONDITION_FOR_TARGET_4 ? 4'h7 : 0 ;
+    //color: BLUE (orange)
     
 //    reg [11:0] xBallPos = 640;
 //    reg [11:0] yBallPos = 900;
@@ -421,9 +491,9 @@ module SCOPE_TOP(
     //-------------------------------------------------------------------------
     
     // COMBINE ALL OUTPUTS ON EACH CHANNEL
-    wire[3:0] VGA_RED_CHAN = VGA_RED_GRID | VGA_RED_RAINBOW | VGA_RED_TRIGGER_LINE ;
-    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW ; 
-    wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_RAINBOW | VGA_BALL;  
+    wire[3:0] VGA_RED_CHAN = VGA_RED_GRID | VGA_RED_RAINBOW | VGA_TARGET_CURRENT | VGA_TARGET_1 | VGA_TARGET_3;
+    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW | VGA_TARGET_3 | VGA_TARGET_2 | VGA_TRIGGER_LINE ; 
+    wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_RAINBOW | VGA_TARGET_1 | VGA_TARGET_4 | VGA_TARGET_2;  
 
 
     // CLOCK THEM OUT
