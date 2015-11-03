@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Tue Nov 03 17:00:31 2015
-# Process ID: 1868
+# Start of session at: Tue Nov 03 18:39:26 2015
+# Process ID: 10228
 # Current directory: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1
 # Command line: vivado.exe -log SCOPE_TOP.vds -mode batch -messageDb vivado.pb -notrace -source SCOPE_TOP.tcl
 # Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1/SCOPE_TOP.vds
@@ -14,26 +14,26 @@ Command: synth_design -top SCOPE_TOP -part xc7a35tcpg236-3
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-WARNING: [Synth 8-992] firstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:522]
-WARNING: [Synth 8-992] firstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:523]
-WARNING: [Synth 8-992] firstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:524]
-WARNING: [Synth 8-992] secondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:526]
-WARNING: [Synth 8-992] secondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:527]
-WARNING: [Synth 8-992] secondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:528]
-WARNING: [Synth 8-992] thirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:530]
-WARNING: [Synth 8-992] thirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:531]
-WARNING: [Synth 8-992] thirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:532]
-WARNING: [Synth 8-992] diffFirstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:632]
-WARNING: [Synth 8-992] diffFirstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:633]
-WARNING: [Synth 8-992] diffFirstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:634]
-WARNING: [Synth 8-992] diffSecondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:636]
-WARNING: [Synth 8-992] diffSecondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:637]
-WARNING: [Synth 8-992] diffSecondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:638]
-WARNING: [Synth 8-992] diffThirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:640]
-WARNING: [Synth 8-992] diffThirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:641]
-WARNING: [Synth 8-992] diffThirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:642]
+WARNING: [Synth 8-992] firstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:508]
+WARNING: [Synth 8-992] firstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:509]
+WARNING: [Synth 8-992] firstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:510]
+WARNING: [Synth 8-992] secondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:512]
+WARNING: [Synth 8-992] secondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:513]
+WARNING: [Synth 8-992] secondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:514]
+WARNING: [Synth 8-992] thirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:516]
+WARNING: [Synth 8-992] thirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:517]
+WARNING: [Synth 8-992] thirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:518]
+WARNING: [Synth 8-992] diffFirstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:618]
+WARNING: [Synth 8-992] diffFirstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:619]
+WARNING: [Synth 8-992] diffFirstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:620]
+WARNING: [Synth 8-992] diffSecondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:622]
+WARNING: [Synth 8-992] diffSecondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:623]
+WARNING: [Synth 8-992] diffSecondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:624]
+WARNING: [Synth 8-992] diffThirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:626]
+WARNING: [Synth 8-992] diffThirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:627]
+WARNING: [Synth 8-992] diffThirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:628]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 270.922 ; gain = 99.586
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 270.648 ; gain = 99.449
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SCOPE_TOP' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
@@ -167,11 +167,11 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dart
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:30]
 WARNING: [Synth 8-567] referenced signal 'colNum' should be on the sensitivity list [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:29]
 INFO: [Synth 8-256] done synthesizing module 'DigitDrawer' (11#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:23]
-WARNING: [Synth 8-3848] Net TEMP_MEM[0] in module/entity SCOPE_TOP does not have driver. [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:276]
+WARNING: [Synth 8-3848] Net TEMP_MEM[0] in module/entity SCOPE_TOP does not have driver. [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:262]
 INFO: [Synth 8-256] done synthesizing module 'SCOPE_TOP' (12#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
 WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 390.230 ; gain = 218.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 389.965 ; gain = 218.766
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -181,7 +181,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 390.230 ; gain = 218.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 389.965 ; gain = 218.766
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -200,29 +200,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 684.000 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 683.855 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v:39]
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:294]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:280]
 WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:47]
 WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:33]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:19 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -478,15 +478,15 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:22 . Memory (MB): peak = 684.000 ; gain = 512.664
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:25 ; elapsed = 00:01:25 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:32 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:32 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished Parallel Reinference  : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 683.855 ; gain = 512.656
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
@@ -569,9 +569,9 @@ WARNING: [Synth 8-3332] Sequential element (\out_reg[2] ) is unused and will be 
 WARNING: [Synth 8-3332] Sequential element (\out_reg[1] ) is unused and will be removed from module DigitDrawer.
 WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished Area Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:01:57 . Memory (MB): peak = 683.855 ; gain = 512.656
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 684.000 ; gain = 512.664
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:56 ; elapsed = 00:01:57 . Memory (MB): peak = 683.855 ; gain = 512.656
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
@@ -590,12 +590,12 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:03 . Memory (MB): peak = 751.699 ; gain = 580.363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:07 ; elapsed = 00:02:08 . Memory (MB): peak = 750.617 ; gain = 579.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 832.172 ; gain = 660.836
+Finished Timing Optimization : Time (s): cpu = 00:02:17 ; elapsed = 00:02:18 . Memory (MB): peak = 831.551 ; gain = 660.352
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 832.172 ; gain = 660.836
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:17 ; elapsed = 00:02:18 . Memory (MB): peak = 831.551 ; gain = 660.352
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
@@ -607,7 +607,7 @@ Report RTL Partitions:
 |4     |SCOPE_TOP__GB3 |           1|      9241|
 |5     |SCOPE_TOP__GB4 |           1|      6960|
 +------+---------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 832.172 ; gain = 660.836
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:17 ; elapsed = 00:02:18 . Memory (MB): peak = 831.551 ; gain = 660.352
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
@@ -642,7 +642,7 @@ WARNING: [Synth 8-3332] Sequential element (\digitE/out_reg[0] ) is unused and w
 WARNING: [Synth 8-3332] Sequential element (\digit6/out_reg[2] ) is unused and will be removed from module SCOPE_TOP.
 WARNING: [Synth 8-3332] Sequential element (\digitA/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:02:32 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -666,7 +666,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:35 ; elapsed = 00:02:36 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:02:44 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -679,7 +679,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:35 ; elapsed = 00:02:36 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:43 ; elapsed = 00:02:44 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -691,25 +691,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:47 ; elapsed = 00:02:49 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:47 ; elapsed = 00:02:49 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:40 ; elapsed = 00:02:41 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -778,14 +778,14 @@ Report Instance Areas:
 |28    |  digitI                |DigitDrawer_16          |     6|
 +------+------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 859.871 ; gain = 688.535
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 859.566 ; gain = 688.367
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:19 ; elapsed = 00:02:33 . Memory (MB): peak = 859.871 ; gain = 379.070
-Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 859.871 ; gain = 688.535
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:26 ; elapsed = 00:02:41 . Memory (MB): peak = 859.566 ; gain = 378.777
+Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 859.566 ; gain = 688.367
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 374 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -796,7 +796,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 110 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:51 ; elapsed = 00:02:52 . Memory (MB): peak = 859.871 ; gain = 672.840
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 859.871 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.245 . Memory (MB): peak = 859.871 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 03 17:03:33 2015...
+synth_design: Time (s): cpu = 00:03:00 ; elapsed = 00:03:02 . Memory (MB): peak = 859.566 ; gain = 672.668
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 859.566 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 859.566 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 03 18:42:38 2015...

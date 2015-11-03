@@ -26,14 +26,16 @@ module SCOPE_TOP(
         
     input btnL,                 // decrease clock sampling rate
     input btnR,                 // increase clock sampling rate
-    input btnU,
-    input btnD,
-    input btnC,
+    input btnU,                 // increase trigger level (in trigger mode) or shift tracer right (tracer mode)
+    input btnD,                 // decrease trigger level (in trigger mode) or shift tracer left (tracer mode)
+    input btnC,                 // implant tracer at current spot, up 4 (tracer mode)
     
     input sw0,                  // special feature 1: point joiner to align points
     input sw1,                  // special feature 2: triggering
+                                // + special feature 7: current volt reading
+                                // + special feature 8: volt difference between current tracer & tracer 1
     input sw2,                  // special feature 3: RAINBOWS
-    input sw3,                  //special feature 4: aim mode
+    input sw3,                  // special feature 4: aim mode
     
     //special feature 6: Grid Color
     input sw13,
@@ -230,22 +232,6 @@ module SCOPE_TOP(
         //      01 -- increment CLK_SUBSAMPLE_ID
         //      10 -- decrement CLK_SUBSAMPLE_ID
 
- //   assign ctrl = 0 ; // remove this if you implement your FSM
-
-    // this process increments / decrements CLK_SUBSAMPLE_ID depending on ctrl        
-    /*
-    always@(posedge CLK_MAIN)
-        begin
-            if( ctrl == 2'b01 )begin
-                CLK_SUBSAMPLE_ID = CLK_SUBSAMPLE_ID + 1 ;
-                testCtrl = ctrl;
-            end
-            else if (ctrl == 2'b10)begin
-                CLK_SUBSAMPLE_ID = CLK_SUBSAMPLE_ID - 1 ;
-                testCtrl = ctrl;
-            end
-        end
- */
      always@(posedge CLK_MAIN)
             begin
                 if( ctrl == 2'b10 && CLK_SUBSAMPLE_ID < 7) begin
