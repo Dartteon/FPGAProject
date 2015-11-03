@@ -2,11 +2,11 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Thu Oct 15 16:23:56 2015
-# Process ID: 2832
-# Current directory: D:/Dropbox/Y2S1/EE2020/Lab/ProjectFPGA/ProjectFPGA.runs/synth_1
+# Start of session at: Tue Nov 03 11:48:03 2015
+# Process ID: 8536
+# Current directory: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1
 # Command line: vivado.exe -log SCOPE_TOP.vds -mode batch -messageDb vivado.pb -notrace -source SCOPE_TOP.tcl
-# Log file: D:/Dropbox/Y2S1/EE2020/Lab/ProjectFPGA/ProjectFPGA.runs/synth_1/SCOPE_TOP.vds
-# Journal file: D:/Dropbox/Y2S1/EE2020/Lab/ProjectFPGA/ProjectFPGA.runs/synth_1\vivado.jou
+# Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1/SCOPE_TOP.vds
+# Journal file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source SCOPE_TOP.tcl -notrace

@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date             : Sat Oct 31 16:19:11 2015
+| Date             : Tue Nov 03 13:21:34 2015
 | Host             : MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file SCOPE_TOP_power_routed.rpt -pb SCOPE_TOP_power_summary_routed.pb
 | Design           : SCOPE_TOP
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.402 |
-| Dynamic (W)              | 0.329 |
-| Device Static (W)        | 0.072 |
+| Total On-Chip Power (W)  | 0.458 |
+| Dynamic (W)              | 0.385 |
+| Device Static (W)        | 0.073 |
 | Effective TJA (C/W)      | 5.0   |
-| Max Ambient (C)          | 98.0  |
-| Junction Temperature (C) | 27.0  |
+| Max Ambient (C)          | 97.7  |
+| Junction Temperature (C) | 27.3  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,20 +49,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.006 |        5 |       --- |             --- |
-| Slice Logic    |     0.071 |    40941 |       --- |             --- |
-|   LUT as Logic |     0.062 |    11245 |     20800 |           54.06 |
-|   F7/F8 Muxes  |     0.008 |     6072 |     32600 |           18.63 |
-|   CARRY4       |    <0.001 |      104 |      8150 |            1.28 |
-|   Register     |    <0.001 |    20820 |     41600 |           50.05 |
-|   Others       |     0.000 |       26 |       --- |             --- |
+| Clocks         |     0.011 |        5 |       --- |             --- |
+| Slice Logic    |     0.098 |    46174 |       --- |             --- |
+|   LUT as Logic |     0.086 |    14236 |     20800 |           68.44 |
+|   F7/F8 Muxes  |     0.011 |     8088 |     32600 |           24.81 |
+|   CARRY4       |    <0.001 |      188 |      8150 |            2.31 |
+|   Register     |    <0.001 |    20929 |     41600 |           50.31 |
+|   Others       |     0.000 |       38 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |     0.123 |    28469 |       --- |             --- |
+| Signals        |     0.147 |    29618 |       --- |             --- |
 | MMCM           |     0.123 |        1 |         5 |           20.00 |
 | I/O            |     0.005 |       37 |       106 |           34.91 |
 | XADC           |     0.002 |        1 |       --- |             --- |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.402 |          |           |                 |
+| Static Power   |     0.073 |          |           |                 |
+| Total          |     0.458 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.211 |       0.201 |      0.010 |
+| Vccint    |       1.000 |     0.267 |       0.256 |      0.010 |
 | Vccaux    |       1.800 |     0.081 |       0.068 |      0.013 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -143,7 +143,7 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| SCOPE_TOP               |     0.329 |
+| SCOPE_TOP               |     0.385 |
 |   BTNC_DEBOUNCER        |    <0.001 |
 |   BTND_DEBOUNCER        |    <0.001 |
 |   BTNL_DEBOUNCER        |    <0.001 |
@@ -155,7 +155,13 @@ Table of Contents
 |     U0                  |     0.124 |
 |   SAMPLER               |     0.005 |
 |     XLXI_7              |     0.002 |
-|   VGA_CONTROLLER        |     0.134 |
+|   VGA_CONTROLLER        |     0.129 |
+|   digit4                |     0.000 |
+|   digit5                |    <0.001 |
+|   digit6                |     0.000 |
+|   digit7                |    <0.001 |
+|   digit8                |    <0.001 |
+|   digit9                |     0.000 |
 +-------------------------+-----------+
 
 

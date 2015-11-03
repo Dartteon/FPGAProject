@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1446279141">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-3" LaunchTime="1446527649">
   <File Type="RDS-DCP" Name="SCOPE_TOP.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="SCOPE_TOP_utilization_synth.pb"/>
@@ -25,6 +25,13 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="F:/skeleton_sources/xadc_wiz_0.v"/>
         <Attr Name="ImportTime" Val="1443275648"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DigitDrawer.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

@@ -486,13 +486,116 @@ module SCOPE_TOP(
     
     //Special feature 5: DIGITS
     
+    reg [3:0] firstDigit;
+    reg [3:0] secondDigit;
+    reg [3:0] thirdDigit;
     
+    always @ (posedge CLK_SUBSAMPLE) begin
+        firstDigit <= ((DISPLAY_MEM[currentxPos])/128);
+        secondDigit <= (((DISPLAY_MEM[currentxPos])/13)%10);
+        thirdDigit <= (((DISPLAY_MEM[currentxPos]))%10);
+    end
+    
+    DigitDrawer digit1 (firstDigit, 0, firstDigitCol1);
+    DigitDrawer digit2 (firstDigit, 1, firstDigitCol2);
+    DigitDrawer digit3 (firstDigit, 2, firstDigitCol3);
+    
+    DigitDrawer digit4 (secondDigit, 0, secondDigitCol1);
+    DigitDrawer digit5 (secondDigit, 1, secondDigitCol2);
+    DigitDrawer digit6 (secondDigit, 2, secondDigitCol3);
+    
+    DigitDrawer digit7 (thirdDigit, 0, thirdDigitCol1);
+    DigitDrawer digit8 (thirdDigit, 1, thirdDigitCol2);
+    DigitDrawer digit9 (thirdDigit, 2, thirdDigitCol3);
+    
+    wire [4:0] firstDigitCol1;
+    wire [4:0] firstDigitCol2;
+    wire [4:0] firstDigitCol3;
+    
+    wire [4:0] secondDigitCol1;
+    wire [4:0] secondDigitCol2;
+    wire [4:0] secondDigitCol3;
+    
+    wire [4:0] thirdDigitCol1;
+    wire [4:0] thirdDigitCol2;
+    wire [4:0] thirdDigitCol3;
+    
+    wire CONDITION_FOR_DIGIT =
+        (sw3 && (
+        
+           ((VGA_horzCoord == currentxPos-10) && (VGA_vertCoord >= ((511+128) - 314)) && (VGA_vertCoord <= ((511+128) - 311)))
+        || ((VGA_horzCoord == currentxPos-9) && (VGA_vertCoord == ((511+128) - 310)))
+        || ((VGA_horzCoord == currentxPos-8) && (VGA_vertCoord >= ((511+128) - 314)) && (VGA_vertCoord <= ((511+128) - 311)))
+        
+        || ((VGA_horzCoord >= currentxPos-5) && (VGA_horzCoord <= currentxPos-3) && ((VGA_vertCoord == ((511+128) - 311)) || (VGA_vertCoord == ((511+128) - 313))))
+        
+        || (firstDigitCol1[0] && (VGA_horzCoord == currentxPos+3) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (firstDigitCol1[1] && (VGA_horzCoord == currentxPos+3) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (firstDigitCol1[2] && (VGA_horzCoord == currentxPos+3) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (firstDigitCol1[3] && (VGA_horzCoord == currentxPos+3) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (firstDigitCol1[4] && (VGA_horzCoord == currentxPos+3) && ((VGA_vertCoord == ((511+128) - 314))))
+        
+        || (firstDigitCol2[0] && (VGA_horzCoord == currentxPos+4) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (firstDigitCol2[1] && (VGA_horzCoord == currentxPos+4) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (firstDigitCol2[2] && (VGA_horzCoord == currentxPos+4) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (firstDigitCol2[3] && (VGA_horzCoord == currentxPos+4) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (firstDigitCol2[4] && (VGA_horzCoord == currentxPos+4) && ((VGA_vertCoord == ((511+128) - 314))))
+        
+        || (firstDigitCol3[0] && (VGA_horzCoord == currentxPos+5) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (firstDigitCol3[1] && (VGA_horzCoord == currentxPos+5) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (firstDigitCol3[2] && (VGA_horzCoord == currentxPos+5) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (firstDigitCol3[3] && (VGA_horzCoord == currentxPos+5) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (firstDigitCol3[4] && (VGA_horzCoord == currentxPos+5) && ((VGA_vertCoord == ((511+128) - 314))))
+        
+        || ((VGA_horzCoord == currentxPos+8) && (VGA_vertCoord == ((511+128) - 310)))
+        
+        || (secondDigitCol1[0] && (VGA_horzCoord == currentxPos+11) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (secondDigitCol1[1] && (VGA_horzCoord == currentxPos+11) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (secondDigitCol1[2] && (VGA_horzCoord == currentxPos+11) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (secondDigitCol1[3] && (VGA_horzCoord == currentxPos+11) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (secondDigitCol1[4] && (VGA_horzCoord == currentxPos+11) && ((VGA_vertCoord == ((511+128) - 314))))
+     
+        || (secondDigitCol2[0] && (VGA_horzCoord == currentxPos+12) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (secondDigitCol2[1] && (VGA_horzCoord == currentxPos+12) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (secondDigitCol2[2] && (VGA_horzCoord == currentxPos+12) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (secondDigitCol2[3] && (VGA_horzCoord == currentxPos+12) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (secondDigitCol2[4] && (VGA_horzCoord == currentxPos+12) && ((VGA_vertCoord == ((511+128) - 314))))
+     
+        || (secondDigitCol3[0] && (VGA_horzCoord == currentxPos+13) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (secondDigitCol3[1] && (VGA_horzCoord == currentxPos+13) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (secondDigitCol3[2] && (VGA_horzCoord == currentxPos+13) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (secondDigitCol3[3] && (VGA_horzCoord == currentxPos+13) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (secondDigitCol3[4] && (VGA_horzCoord == currentxPos+13) && ((VGA_vertCoord == ((511+128) - 314))))
+        
+        
+        
+        || (thirdDigitCol1[0] && (VGA_horzCoord == currentxPos+16) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (thirdDigitCol1[1] && (VGA_horzCoord == currentxPos+16) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (thirdDigitCol1[2] && (VGA_horzCoord == currentxPos+16) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (thirdDigitCol1[3] && (VGA_horzCoord == currentxPos+16) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (thirdDigitCol1[4] && (VGA_horzCoord == currentxPos+16) && ((VGA_vertCoord == ((511+128) - 314))))
+     
+        || (thirdDigitCol2[0] && (VGA_horzCoord == currentxPos+17) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (thirdDigitCol2[1] && (VGA_horzCoord == currentxPos+17) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (thirdDigitCol2[2] && (VGA_horzCoord == currentxPos+17) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (thirdDigitCol2[3] && (VGA_horzCoord == currentxPos+17) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (thirdDigitCol2[4] && (VGA_horzCoord == currentxPos+17) && ((VGA_vertCoord == ((511+128) - 314))))
+     
+        || (thirdDigitCol3[0] && (VGA_horzCoord == currentxPos+18) && ((VGA_vertCoord == ((511+128) - 310))))
+        || (thirdDigitCol3[1] && (VGA_horzCoord == currentxPos+18) && ((VGA_vertCoord == ((511+128) - 311))))
+        || (thirdDigitCol3[2] && (VGA_horzCoord == currentxPos+18) && ((VGA_vertCoord == ((511+128) - 312))))
+        || (thirdDigitCol3[3] && (VGA_horzCoord == currentxPos+18) && ((VGA_vertCoord == ((511+128) - 313))))
+        || (thirdDigitCol3[4] && (VGA_horzCoord == currentxPos+18) && ((VGA_vertCoord == ((511+128) - 314))))
+        )
+        );
+        
+    wire[3:0] VGA_DIGIT = CONDITION_FOR_DIGIT ? 4'h7 : 0 ;
     
     //-------------------------------------------------------------------------
     
     // COMBINE ALL OUTPUTS ON EACH CHANNEL
     wire[3:0] VGA_RED_CHAN = VGA_RED_GRID | VGA_RED_RAINBOW | VGA_TARGET_CURRENT | VGA_TARGET_1 | VGA_TARGET_3;
-    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW | VGA_TARGET_3 | VGA_TARGET_2 | VGA_TRIGGER_LINE ; 
+    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW | VGA_TARGET_3 | VGA_TARGET_2 | VGA_TRIGGER_LINE | VGA_DIGIT; 
     wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_RAINBOW | VGA_TARGET_1 | VGA_TARGET_4 | VGA_TARGET_2;  
 
 

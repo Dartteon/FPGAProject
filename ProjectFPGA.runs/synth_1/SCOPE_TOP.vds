@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Sat Oct 31 16:12:21 2015
-# Process ID: 10640
+# Start of session at: Tue Nov 03 13:14:09 2015
+# Process ID: 3452
 # Current directory: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1
 # Command line: vivado.exe -log SCOPE_TOP.vds -mode batch -messageDb vivado.pb -notrace -source SCOPE_TOP.tcl
 # Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1/SCOPE_TOP.vds
@@ -14,8 +14,17 @@ Command: synth_design -top SCOPE_TOP -part xc7a35tcpg236-3
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Synth 8-992] firstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:511]
+WARNING: [Synth 8-992] firstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:512]
+WARNING: [Synth 8-992] firstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:513]
+WARNING: [Synth 8-992] secondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:515]
+WARNING: [Synth 8-992] secondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:516]
+WARNING: [Synth 8-992] secondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:517]
+WARNING: [Synth 8-992] thirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:519]
+WARNING: [Synth 8-992] thirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:520]
+WARNING: [Synth 8-992] thirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:521]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 260.813 ; gain = 89.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 270.219 ; gain = 99.563
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SCOPE_TOP' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
@@ -135,11 +144,25 @@ INFO: [Synth 8-638] synthesizing module 'switch_debouncer_fast' [C:/Users/Dartte
 	Parameter on bound to: 1 - type: integer 
 	Parameter idle bound to: 0 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'switch_debouncer_fast' (10#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/switch_debouncer_fast.v:23]
+INFO: [Synth 8-638] synthesizing module 'DigitDrawer' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:32]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:38]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:50]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:74]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:80]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:86]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:30]
+WARNING: [Synth 8-567] referenced signal 'colNum' should be on the sensitivity list [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:29]
+INFO: [Synth 8-256] done synthesizing module 'DigitDrawer' (11#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:23]
 WARNING: [Synth 8-3848] Net TEMP_MEM[1279] in module/entity SCOPE_TOP does not have driver. [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:266]
-INFO: [Synth 8-256] done synthesizing module 'SCOPE_TOP' (11#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
+INFO: [Synth 8-256] done synthesizing module 'SCOPE_TOP' (12#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
 WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 374.383 ; gain = 203.031
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 382.453 ; gain = 211.797
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -149,7 +172,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 374.383 ; gain = 203.031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 382.453 ; gain = 211.797
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -168,28 +191,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 671.949 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 679.238 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v:39]
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:284]
 WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:33]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:23 ; elapsed = 00:01:24 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -197,16 +221,17 @@ Report RTL Partitions:
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
 |1     |SCOPE_TOP__GB0 |           1|     30754|
-|2     |SCOPE_TOP__GB1 |           1|     18336|
-|3     |SCOPE_TOP__GB2 |           1|      9487|
-|4     |SCOPE_TOP__GB3 |           1|      7688|
+|2     |SCOPE_TOP__GB1 |           1|     29440|
+|3     |SCOPE_TOP__GB2 |           1|     13363|
+|4     |SCOPE_TOP__GB3 |           1|      6024|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 15    
+	   2 Input     32 Bit       Adders := 20    
+	   2 Input     13 Bit       Adders := 10    
 	   2 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
@@ -217,19 +242,21 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 4     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 2565  
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 10    
 +---Muxes : 
 	   8 Input     19 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 81    
 	   2 Input      4 Bit        Muxes := 3     
-	   3 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 8     
+	   3 Input      2 Bit        Muxes := 2     
 	   7 Input      2 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 14    
 	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 13    
+	  11 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -240,7 +267,8 @@ Hierarchical RTL Component report
 Module SCOPE_TOP 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 15    
+	   2 Input     32 Bit       Adders := 20    
+	   2 Input     13 Bit       Adders := 10    
 	   2 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 1     
@@ -251,18 +279,72 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 4     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 2564  
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 6     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   8 Input     19 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
-	   3 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 4     
 	   3 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
+Module DigitDrawer__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
 Module switch_debouncer__1 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -330,49 +412,72 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:24 ; elapsed = 00:01:24 . Memory (MB): peak = 671.949 ; gain = 500.598
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:26 ; elapsed = 00:01:26 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:38 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:38 ; elapsed = 00:01:38 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished Parallel Reinference  : Time (s): cpu = 00:01:35 ; elapsed = 00:01:36 . Memory (MB): peak = 679.238 ; gain = 508.582
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
 |1     |SCOPE_TOP__GB0 |           1|     30754|
-|2     |SCOPE_TOP__GB1 |           1|     18336|
-|3     |SCOPE_TOP__GB2 |           1|      8155|
-|4     |SCOPE_TOP__GB3 |           1|      7688|
+|2     |SCOPE_TOP__GB1 |           1|     29440|
+|3     |SCOPE_TOP__GB2 |           1|     12148|
+|4     |SCOPE_TOP__GB3 |           1|      6024|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3886] merging instance 'i_2/\LOAD_VALUE_SUBSAMPLE_reg[18] ' (FD) to 'i_2/\LOAD_VALUE_SUBSAMPLE_reg[17] '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\LOAD_VALUE_SUBSAMPLE_reg[7] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit3/out_reg[4] ' (LD) to 'i_2/\digit3/out_reg[3] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit3/out_reg[3] ' (LD) to 'i_2/\digit3/out_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit3/out_reg[2] ' (LD) to 'i_2/\digit3/out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit3/out_reg[1] ' (LD) to 'i_2/\digit1/out_reg[4] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit3/out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit2/out_reg[4] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit2/out_reg[3] ' (LD) to 'i_2/\digit2/out_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit2/out_reg[2] ' (LD) to 'i_2/\digit2/out_reg[1] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit2/out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit1/out_reg[4] ' (LD) to 'i_2/\digit1/out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit1/out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit1/out_reg[2] ' (LD) to 'i_2/\digit1/out_reg[1] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit1/out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit9/out_reg[4] ' (LD) to 'i_2/\digit9/out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit9/out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit8/out_reg[3] ' (LD) to 'i_2/\digit8/out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit6/out_reg[4] ' (LD) to 'i_2/\digit6/out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_2/\digit6/out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_2/\digit5/out_reg[3] ' (LD) to 'i_2/\digit5/out_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_2/\VGA_BLUE_reg[0] ' (FD) to 'i_2/\VGA_BLUE_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_2/\VGA_BLUE_reg[1] ' (FD) to 'i_2/\VGA_BLUE_reg[2] '
-INFO: [Synth 8-3886] merging instance 'i_2/\VGA_RED_reg[0] ' (FD) to 'i_2/\VGA_RED_reg[1] '
-INFO: [Synth 8-3886] merging instance 'i_2/\VGA_RED_reg[1] ' (FD) to 'i_2/\VGA_RED_reg[2] '
 INFO: [Synth 8-3886] merging instance 'i_2/\VGA_GREEN_reg[0] ' (FD) to 'i_2/\VGA_GREEN_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_2/\VGA_GREEN_reg[1] ' (FD) to 'i_2/\VGA_GREEN_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_RED_reg[0] ' (FD) to 'i_2/\VGA_RED_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_2/\VGA_RED_reg[1] ' (FD) to 'i_2/\VGA_RED_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit4/out_reg[4] ' (LD) to 'i_2/\digit6/out_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit4/out_reg[0] ' (LD) to 'i_2/\digit5/out_reg[0] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit9/out_reg[2] ' (LD) to 'i_2/\digit7/out_reg[4] '
+INFO: [Synth 8-3886] merging instance 'i_2/\digit8/out_reg[0] ' (LD) to 'i_2/\digit7/out_reg[0] '
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished Area Optimization : Time (s): cpu = 00:01:54 ; elapsed = 00:01:55 . Memory (MB): peak = 679.238 ; gain = 508.582
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 671.949 ; gain = 500.598
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:54 ; elapsed = 00:01:55 . Memory (MB): peak = 679.238 ; gain = 508.582
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
 |1     |SCOPE_TOP__GB0 |           1|     25633|
-|2     |SCOPE_TOP__GB1 |           1|     18336|
-|3     |SCOPE_TOP__GB2 |           1|      6363|
-|4     |SCOPE_TOP__GB3 |           1|      7688|
+|2     |SCOPE_TOP__GB1 |           1|     29440|
+|3     |SCOPE_TOP__GB2 |           1|      7903|
+|4     |SCOPE_TOP__GB3 |           1|      6024|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -381,28 +486,28 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:59 ; elapsed = 00:02:00 . Memory (MB): peak = 680.121 ; gain = 508.770
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 714.891 ; gain = 544.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 736.055 ; gain = 564.703
+Finished Timing Optimization : Time (s): cpu = 00:02:13 ; elapsed = 00:02:14 . Memory (MB): peak = 784.176 ; gain = 613.520
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 736.055 ; gain = 564.703
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:14 . Memory (MB): peak = 784.176 ; gain = 613.520
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
 |1     |SCOPE_TOP__GB0 |           1|     25633|
-|2     |SCOPE_TOP__GB1 |           1|     18336|
-|3     |SCOPE_TOP__GB2 |           1|      6360|
-|4     |SCOPE_TOP__GB3 |           1|      7688|
+|2     |SCOPE_TOP__GB1 |           1|     29440|
+|3     |SCOPE_TOP__GB2 |           1|      7903|
+|4     |SCOPE_TOP__GB3 |           1|      6024|
 +------+---------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:05 ; elapsed = 00:02:06 . Memory (MB): peak = 736.055 ; gain = 564.703
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:13 ; elapsed = 00:02:14 . Memory (MB): peak = 784.176 ; gain = 613.520
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:18 ; elapsed = 00:02:19 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Technology Mapping : Time (s): cpu = 00:02:29 ; elapsed = 00:02:31 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -426,7 +531,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished IO Insertion : Time (s): cpu = 00:02:33 ; elapsed = 00:02:34 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -439,7 +544,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:22 ; elapsed = 00:02:23 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:33 ; elapsed = 00:02:35 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -451,25 +556,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:25 ; elapsed = 00:02:26 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:36 ; elapsed = 00:02:38 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:25 ; elapsed = 00:02:26 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:37 ; elapsed = 00:02:38 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:38 ; elapsed = 00:02:39 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:38 ; elapsed = 00:02:39 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -486,19 +591,19 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     4|
-|2     |CARRY4     |   104|
-|3     |LUT1       |   172|
-|4     |LUT2       |   152|
-|5     |LUT3       |  5214|
-|6     |LUT4       |   134|
-|7     |LUT5       |   126|
-|8     |LUT6       |  8266|
+|2     |CARRY4     |   188|
+|3     |LUT1       |   386|
+|4     |LUT2       |   160|
+|5     |LUT3       |  5234|
+|6     |LUT4       |   176|
+|7     |LUT5       |   124|
+|8     |LUT6       | 11096|
 |9     |MMCME2_ADV |     1|
-|10    |MUXF7      |  4080|
-|11    |MUXF8      |  1992|
+|10    |MUXF7      |  5447|
+|11    |MUXF8      |  2641|
 |12    |XADC       |     1|
-|13    |FDRE       | 20818|
-|14    |LD         |     2|
+|13    |FDRE       | 20907|
+|14    |LD         |    22|
 |15    |IBUF       |    12|
 |16    |OBUF       |    25|
 |17    |OBUFT      |     1|
@@ -508,39 +613,45 @@ Report Instance Areas:
 +------+------------------------+------------------------+------+
 |      |Instance                |Module                  |Cells |
 +------+------------------------+------------------------+------+
-|1     |top                     |                        | 41104|
+|1     |top                     |                        | 46425|
 |2     |  BTNC_DEBOUNCER        |switch_debouncer        |    76|
-|3     |  BTND_DEBOUNCER        |switch_debouncer_fast   |    78|
+|3     |  BTND_DEBOUNCER        |switch_debouncer_fast   |    71|
 |4     |  BTNL_DEBOUNCER        |switch_debouncer_0      |    71|
 |5     |  BTNR_DEBOUNCER        |switch_debouncer_1      |    70|
-|6     |  BTNU_DEBOUNCER        |switch_debouncer_fast_2 |  4832|
+|6     |  BTNU_DEBOUNCER        |switch_debouncer_fast_2 |  4839|
 |7     |  FSM1                  |FSM_inc_dec             |     9|
 |8     |  GEN_CLK_SUBSAMPLE     |clock_divider           |    72|
 |9     |  PIXEL_CLOCK_GENERATOR |clk_wiz_0               |     3|
 |10    |    U0                  |clk_wiz_0_clk_wiz       |     3|
 |11    |  SAMPLER               |ADC_sampler             |    24|
 |12    |    XLXI_7              |xadc_wiz_0              |     1|
-|13    |  VGA_CONTROLLER        |vga_ctrl                | 15187|
+|13    |  VGA_CONTROLLER        |vga_ctrl                | 15371|
+|14    |  digit4                |DigitDrawer             |     6|
+|15    |  digit5                |DigitDrawer_3           |    12|
+|16    |  digit6                |DigitDrawer_4           |     6|
+|17    |  digit7                |DigitDrawer_5           |    12|
+|18    |  digit8                |DigitDrawer_6           |     7|
+|19    |  digit9                |DigitDrawer_7           |     4|
 +------+------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 793.074 ; gain = 621.723
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:38 ; elapsed = 00:02:39 . Memory (MB): peak = 828.777 ; gain = 658.121
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:05 ; elapsed = 00:02:19 . Memory (MB): peak = 793.074 ; gain = 308.461
-Synthesis Optimization Complete : Time (s): cpu = 00:02:26 ; elapsed = 00:02:27 . Memory (MB): peak = 793.074 ; gain = 621.723
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:17 ; elapsed = 00:02:31 . Memory (MB): peak = 828.777 ; gain = 344.641
+Synthesis Optimization Complete : Time (s): cpu = 00:02:38 ; elapsed = 00:02:40 . Memory (MB): peak = 828.777 ; gain = 658.121
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
-  LD => LDCE: 2 instances
+  A total of 22 instances were transformed.
+  LD => LDCE: 22 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+89 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:35 ; elapsed = 00:02:37 . Memory (MB): peak = 793.074 ; gain = 606.027
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 793.074 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.216 . Memory (MB): peak = 793.074 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 16:15:06 2015...
+synth_design: Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 828.777 ; gain = 641.426
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 828.777 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.248 . Memory (MB): peak = 828.777 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 03 13:17:08 2015...

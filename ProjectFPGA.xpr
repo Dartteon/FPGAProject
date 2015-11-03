@@ -44,6 +44,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/DigitDrawer.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/skeleton_sources/vga_ctrl.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="F:/skeleton_sources/vga_ctrl.vhd"/>
