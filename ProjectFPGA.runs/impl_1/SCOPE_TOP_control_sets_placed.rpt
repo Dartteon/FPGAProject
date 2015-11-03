@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Tue Nov 03 13:19:50 2015
+| Date         : Tue Nov 03 13:38:51 2015
 | Host         : MSI running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file SCOPE_TOP_control_sets_placed.rpt
 | Design       : SCOPE_TOP
@@ -33,10 +33,10 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |           10325 |         2406 |
+| No           | No                    | No                     |           10325 |         2357 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             201 |           91 |
-| Yes          | No                    | No                     |           10391 |         3753 |
+| No           | Yes                   | No                     |             169 |           64 |
+| Yes          | No                    | No                     |           10391 |         3911 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              12 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -45,32 +45,32 @@ Table of Contents
 3. Detailed Control Set Information
 -----------------------------------
 
-+------------------------------------+--------------------------------------+------------------------------------+------------------+----------------+
-|            Clock Signal            |             Enable Signal            |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
-+------------------------------------+--------------------------------------+------------------------------------+------------------+----------------+
-|  FSM1/nextState_reg[1]_i_2_n_0     |                                      |                                    |                1 |              2 |
-|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 |                                      |                                    |                3 |              4 |
-|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 |                                      | VGA_CONTROLLER/VGA_RED_reg[2]_0    |                4 |              4 |
-|  CLK_IBUF_BUFG                     | SAMPLER/XLXI_7/E[0]                  |                                    |                1 |              8 |
-|  CLK_SUBSAMPLE_BUFG                | SAMPLER/E[0]                         |                                    |                7 |              8 |
-|  CLK_IBUF_BUFG                     | BTNU_DEBOUNCER/E[0]                  |                                    |                3 |              9 |
-|  digit7/E[0]                       |                                      |                                    |                3 |             10 |
-|  digit5/E[0]                       |                                      |                                    |                4 |             10 |
-|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 | VGA_CONTROLLER/eqOp2_in              | VGA_CONTROLLER/v_cntr_reg0         |                3 |             12 |
-|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/target4yPos_reg[0][0] |                                    |                7 |             20 |
-|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/target3yPos_reg[0][0] |                                    |                4 |             20 |
-|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/target2yPos_reg[0][0] |                                    |                4 |             20 |
-|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/E[0]                  |                                    |                6 |             20 |
-|  CLK_IBUF_BUFG                     |                                      | BTND_DEBOUNCER/COUNT[0]_i_1__0_n_0 |                6 |             23 |
-|  CLK_IBUF_BUFG                     |                                      | BTNU_DEBOUNCER/COUNT[0]_i_1__1_n_0 |                6 |             23 |
-|  CLK_IBUF_BUFG                     |                                      | BTNR_DEBOUNCER/COUNT[0]_i_1__2_n_0 |                7 |             27 |
-|  CLK_IBUF_BUFG                     |                                      | BTNL_DEBOUNCER/COUNT[0]_i_1__3_n_0 |                7 |             27 |
-|  CLK_IBUF_BUFG                     |                                      | BTNC_DEBOUNCER/COUNT[0]_i_1_n_0    |                7 |             27 |
-|  CLK_IBUF_BUFG                     |                                      |                                    |               18 |             58 |
-|  CLK_IBUF_BUFG                     | sw3_IBUF                             |                                    |               41 |             62 |
-|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 |                                      | VGA_CONTROLLER/eqOp2_in            |               54 |             70 |
-|  CLK_SUBSAMPLE_BUFG                | SAMPLER/DISPLAY_MEM_reg[96][0][0]    |                                    |             3680 |          10224 |
-|  CLK_SUBSAMPLE_BUFG                |                                      |                                    |             2377 |          10241 |
-+------------------------------------+--------------------------------------+------------------------------------+------------------+----------------+
++------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+|            Clock Signal            |             Enable Signal             |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
+|  FSM1/nextState_reg[1]_i_2_n_0     |                                       |                                    |                1 |              2 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 |                                       |                                    |                4 |              4 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 |                                       | VGA_CONTROLLER/VGA_RED_reg[2]_2    |                4 |              4 |
+|  CLK_IBUF_BUFG                     | SAMPLER/XLXI_7/E[0]                   |                                    |                1 |              8 |
+|  CLK_SUBSAMPLE_BUFG                | SAMPLER/E[0]                          |                                    |                8 |              8 |
+|  CLK_IBUF_BUFG                     | BTND_DEBOUNCER/E[0]                   |                                    |                3 |              9 |
+|  digit7/E[0]                       |                                       |                                    |                3 |             10 |
+|  digit5/E[0]                       |                                       |                                    |                3 |             10 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 | VGA_CONTROLLER/eqOp2_in               | VGA_CONTROLLER/v_cntr_reg0         |                3 |             12 |
+|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/target4yPos_reg[0][0]  |                                    |                7 |             20 |
+|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/target3xPos_reg[11][0] |                                    |                4 |             20 |
+|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/target2yPos_reg[0][0]  |                                    |                5 |             20 |
+|  CLK_IBUF_BUFG                     | BTNC_DEBOUNCER/E[0]                   |                                    |                6 |             20 |
+|  CLK_IBUF_BUFG                     |                                       | BTND_DEBOUNCER/COUNT[0]_i_1__0_n_0 |                6 |             23 |
+|  CLK_IBUF_BUFG                     |                                       | BTNU_DEBOUNCER/COUNT[0]_i_1__1_n_0 |                6 |             23 |
+|  CLK_IBUF_BUFG                     |                                       | BTNR_DEBOUNCER/COUNT[0]_i_1__2_n_0 |                7 |             27 |
+|  CLK_IBUF_BUFG                     |                                       | BTNL_DEBOUNCER/COUNT[0]_i_1__3_n_0 |                7 |             27 |
+|  CLK_IBUF_BUFG                     |                                       | BTNC_DEBOUNCER/COUNT[0]_i_1_n_0    |                7 |             27 |
+|  PIXEL_CLOCK_GENERATOR/U0/clk_out1 |                                       | VGA_CONTROLLER/eqOp2_in            |               27 |             38 |
+|  CLK_IBUF_BUFG                     |                                       |                                    |               19 |             58 |
+|  CLK_IBUF_BUFG                     | sw3_IBUF                              |                                    |               43 |             62 |
+|  CLK_SUBSAMPLE_BUFG                | SAMPLER/DISPLAY_MEM_reg[553][0][0]    |                                    |             3834 |          10224 |
+|  CLK_SUBSAMPLE_BUFG                |                                       |                                    |             2327 |          10241 |
++------------------------------------+---------------------------------------+------------------------------------+------------------+----------------+
 
 

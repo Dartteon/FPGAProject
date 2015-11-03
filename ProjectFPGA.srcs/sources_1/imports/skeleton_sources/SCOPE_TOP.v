@@ -296,9 +296,9 @@ module SCOPE_TOP(
     
     integer i;
     always @ (posedge CLK_SUBSAMPLE) begin
-        TEMP_MEM[0] <= ADC_SAMPLE;
+        TEMP_MEM[1279] <= ADC_SAMPLE;
         for (i=1; i<1279; i=i+1)
-            TEMP_MEM[i] <= TEMP_MEM[i-1];
+            TEMP_MEM[i] <= TEMP_MEM[i+1];
         
         if (!sw1) begin
             for (i=1; i<1279; i=i+1)
