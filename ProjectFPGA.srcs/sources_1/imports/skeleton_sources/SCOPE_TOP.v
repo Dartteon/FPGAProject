@@ -35,6 +35,16 @@ module SCOPE_TOP(
     input sw2,                  // special feature 3: RAINBOWS
     input sw3,                  //special feature 4: aim mode
     
+    //special feature 6: Grid Color
+    input sw13,
+    input sw14,
+    input sw15,
+    
+    //special feature 5: Background Color
+    input sw10,
+    input sw11,
+    input sw12,
+    
     input ADC_IN_P,             // differential +ve & -ve analog inputs to ADC
     input ADC_IN_N,  
      
@@ -238,11 +248,11 @@ module SCOPE_TOP(
  */
      always@(posedge CLK_MAIN)
             begin
-                if( ctrl == 2'b10 ) begin
+                if( ctrl == 2'b10 && CLK_SUBSAMPLE_ID < 7) begin
                     CLK_SUBSAMPLE_ID = CLK_SUBSAMPLE_ID + 1 ;
                     testCtrl = ctrl;
                 end
-                else if ( ctrl == 2'b01 ) begin
+                else if ( ctrl == 2'b01  && CLK_SUBSAMPLE_ID > 0) begin
                     CLK_SUBSAMPLE_ID = CLK_SUBSAMPLE_ID - 1 ;
                     testCtrl = ctrl;
                 end
@@ -286,7 +296,7 @@ module SCOPE_TOP(
         else if (!sw3 && btnD_DB)
             triggerLevel <= triggerLevel - 1;
     end
-    wire CONDITION_FOR_TRIGGER_LINE = (sw1 && (VGA_vertCoord == ((511+128) - triggerLevel))) ? 1 : 0;
+    wire CONDITION_FOR_TRIGGER_LINE = (sw1 && (VGA_horzCoord%2==0) && (VGA_vertCoord == ((511+128) - triggerLevel))) ? 1 : 0;
     wire[3:0] VGA_TRIGGER_LINE = CONDITION_FOR_TRIGGER_LINE ? 4'h7 : 0 ;
     
     
@@ -306,7 +316,8 @@ module SCOPE_TOP(
         end
         
         else if (sw1) begin
-            if (ADC_SAMPLE == triggerLevel && ADC_SAMPLE > TEMP_MEM[0]) begin
+            //if (ADC_SAMPLE == triggerLevel && ADC_SAMPLE > TEMP_MEM[1279]) begin
+            if (TEMP_MEM[1279]>=triggerLevel && TEMP_MEM[1278]<triggerLevel) begin
                 for (i=0; i<=1279; i=i+1)
                     DISPLAY_MEM[i] <= TEMP_MEM[i];
             end
@@ -350,9 +361,9 @@ module SCOPE_TOP(
                                 || ((VGA_horzCoord%16) == 0 && ((VGA_vertCoord == 511)  || (VGA_vertCoord == 513)))
                                 );
     
-    wire[3:0] VGA_RED_GRID = CONDITION_FOR_GRID ? 4'h7 : 0 ;
-    wire[3:0] VGA_GREEN_GRID = CONDITION_FOR_GRID ? 4'h7 : 0 ;
-    wire[3:0] VGA_BLUE_GRID = CONDITION_FOR_GRID ? 4'h7 : 0 ;
+    wire[3:0] VGA_RED_GRID = CONDITION_FOR_GRID ? ((sw15) ? 4'h7 : ((sw12) ? 4'h7 : 0)) : ((sw12) ? 4'h7 : 0) ;
+    wire[3:0] VGA_GREEN_GRID = CONDITION_FOR_GRID ? ((sw14) ? 4'h7 : ((sw11) ? 4'h7 : 0)) : ((sw11) ? 4'h7 : 0) ;
+    wire[3:0] VGA_BLUE_GRID = CONDITION_FOR_GRID ? ((sw13) ? 4'h7 : ((sw10) ? 4'h7 : 0)) : ((sw10) ? 4'h7 : 0) ;
     
         // if true, a black pixel is put at coordinates (VGA_horzCoord, VGA_vertCoord), 
         // else a cyan background is generated, characteristic of oscilloscopes! 
@@ -393,17 +404,17 @@ module SCOPE_TOP(
     reg [11:0] currentxPos = (640);
     reg [7:0] currentyPos = (540);
     
-    reg [11:0] target1xPos = 20;
-    reg [7:0] target1yPos = 20;
+    reg [11:0] target1xPos = 0;
+    reg [7:0] target1yPos = 0;
     
-    reg [11:0] target2xPos = 20;
-    reg [7:0] target2yPos = 20;
+    reg [11:0] target2xPos = 0;
+    reg [7:0] target2yPos = 0;
     
-    reg [11:0] target3xPos = 20;
-    reg [7:0] target3yPos = 20;
+    reg [11:0] target3xPos = 0;
+    reg [7:0] target3yPos = 0;
     
-    reg [11:0] target4xPos = 20;
-    reg [7:0] target4yPos = 20;
+    reg [11:0] target4xPos = 0;
+    reg [7:0] target4yPos = 0;
     
     always @ (posedge CLK) begin
         if (sw3) begin
@@ -593,9 +604,119 @@ module SCOPE_TOP(
     
     //-------------------------------------------------------------------------
     
+        //Special Feature 6: Volt Difference
+    reg [3:0] diffFirstDigit;
+    reg [3:0] diffSecondDigit;
+    reg [3:0] diffThirdDigit;
+    
+   // wire currentDifference = DISPLAY_MEM[currentxPos] - DISPLAY_MEM[target1xPos];
+    
+    always @ (posedge CLK_SUBSAMPLE) begin
+            diffFirstDigit <= ((DISPLAY_MEM[currentxPos] - DISPLAY_MEM[target1xPos])/128);
+            diffSecondDigit <= (((DISPLAY_MEM[currentxPos] - DISPLAY_MEM[target1xPos])/13)%10);
+            diffThirdDigit <= (((DISPLAY_MEM[currentxPos] - DISPLAY_MEM[target1xPos]))%10);
+    end
+        
+        DigitDrawer digitA (diffFirstDigit, 0, diffFirstDigitCol1);
+        DigitDrawer digitB (diffFirstDigit, 1, diffFirstDigitCol2);
+        DigitDrawer digitC (diffFirstDigit, 2, diffFirstDigitCol3);
+        
+        DigitDrawer digitD (diffSecondDigit, 0, diffSecondDigitCol1);
+        DigitDrawer digitE (diffSecondDigit, 1, diffSecondDigitCol2);
+        DigitDrawer digitF (diffSecondDigit, 2, diffSecondDigitCol3);
+        
+        DigitDrawer digitG (diffThirdDigit, 0, diffThirdDigitCol1);
+        DigitDrawer digitH (diffThirdDigit, 1, diffThirdDigitCol2);
+        DigitDrawer digitI (diffThirdDigit, 2, diffThirdDigitCol3);
+        
+        wire [4:0] diffFirstDigitCol1;
+        wire [4:0] diffFirstDigitCol2;
+        wire [4:0] diffFirstDigitCol3;
+        
+        wire [4:0] diffSecondDigitCol1;
+        wire [4:0] diffSecondDigitCol2;
+        wire [4:0] diffSecondDigitCol3;
+        
+        wire [4:0] diffThirdDigitCol1;
+        wire [4:0] diffThirdDigitCol2;
+        wire [4:0] diffThirdDigitCol3;
+        
+        wire CONDITION_FOR_DIGIT_DIFF =
+            (sw3 && (
+            
+               ((VGA_horzCoord == 3) && (VGA_vertCoord >= ((511+128) - 563)) && (VGA_vertCoord <= ((511+128) - 560)))
+            || ((VGA_horzCoord == 4) && ((VGA_vertCoord == ((511+128) - 560)) || (VGA_vertCoord == ((511+128) - 564))))
+            || ((VGA_horzCoord == 5) && (VGA_vertCoord >= ((511+128) - 563)) && (VGA_vertCoord <= ((511+128) - 560)))
+            
+            || ((VGA_horzCoord >= 8) && (VGA_horzCoord <= 11) && ((VGA_vertCoord == ((511+128) - 561)) || (VGA_vertCoord == ((511+128) - 563))))
+            
+            || (diffFirstDigitCol1[0] && (VGA_horzCoord == 17) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffFirstDigitCol1[1] && (VGA_horzCoord == 17) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffFirstDigitCol1[2] && (VGA_horzCoord == 17) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffFirstDigitCol1[3] && (VGA_horzCoord == 17) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffFirstDigitCol1[4] && (VGA_horzCoord == 17) && ((VGA_vertCoord == ((511+128) - 564))))
+            
+            || (diffFirstDigitCol2[0] && (VGA_horzCoord == 18) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffFirstDigitCol2[1] && (VGA_horzCoord == 18) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffFirstDigitCol2[2] && (VGA_horzCoord == 18) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffFirstDigitCol2[3] && (VGA_horzCoord == 18) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffFirstDigitCol2[4] && (VGA_horzCoord == 18) && ((VGA_vertCoord == ((511+128) - 564))))
+            
+            || (diffFirstDigitCol3[0] && (VGA_horzCoord == 19) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffFirstDigitCol3[1] && (VGA_horzCoord == 19) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffFirstDigitCol3[2] && (VGA_horzCoord == 19) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffFirstDigitCol3[3] && (VGA_horzCoord == 19) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffFirstDigitCol3[4] && (VGA_horzCoord == 19) && ((VGA_vertCoord == ((511+128) - 564))))
+            
+            || ((VGA_horzCoord == 22) && (VGA_vertCoord == ((511+128) - 560)))
+            
+            || (diffSecondDigitCol1[0] && (VGA_horzCoord == 25) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffSecondDigitCol1[1] && (VGA_horzCoord == 25) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffSecondDigitCol1[2] && (VGA_horzCoord == 25) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffSecondDigitCol1[3] && (VGA_horzCoord == 25) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffSecondDigitCol1[4] && (VGA_horzCoord == 25) && ((VGA_vertCoord == ((511+128) - 564))))
+         
+            || (diffSecondDigitCol2[0] && (VGA_horzCoord == 26) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffSecondDigitCol2[1] && (VGA_horzCoord == 26) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffSecondDigitCol2[2] && (VGA_horzCoord == 26) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffSecondDigitCol2[3] && (VGA_horzCoord == 26) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffSecondDigitCol2[4] && (VGA_horzCoord == 26) && ((VGA_vertCoord == ((511+128) - 564))))
+         
+            || (diffSecondDigitCol3[0] && (VGA_horzCoord == 27) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffSecondDigitCol3[1] && (VGA_horzCoord == 27) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffSecondDigitCol3[2] && (VGA_horzCoord == 27) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffSecondDigitCol3[3] && (VGA_horzCoord == 27) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffSecondDigitCol3[4] && (VGA_horzCoord == 27) && ((VGA_vertCoord == ((511+128) - 564))))
+            
+            
+            
+            || (diffThirdDigitCol1[0] && (VGA_horzCoord == 30) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffThirdDigitCol1[1] && (VGA_horzCoord == 30) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffThirdDigitCol1[2] && (VGA_horzCoord == 30) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffThirdDigitCol1[3] && (VGA_horzCoord == 30) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffThirdDigitCol1[4] && (VGA_horzCoord == 30) && ((VGA_vertCoord == ((511+128) - 564))))
+         
+            || (diffThirdDigitCol2[0] && (VGA_horzCoord == 31) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffThirdDigitCol2[1] && (VGA_horzCoord == 31) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffThirdDigitCol2[2] && (VGA_horzCoord == 31) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffThirdDigitCol2[3] && (VGA_horzCoord == 31) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffThirdDigitCol2[4] && (VGA_horzCoord == 31) && ((VGA_vertCoord == ((511+128) - 564))))
+         
+            || (diffThirdDigitCol3[0] && (VGA_horzCoord == 32) && ((VGA_vertCoord == ((511+128) - 560))))
+            || (diffThirdDigitCol3[1] && (VGA_horzCoord == 32) && ((VGA_vertCoord == ((511+128) - 561))))
+            || (diffThirdDigitCol3[2] && (VGA_horzCoord == 32) && ((VGA_vertCoord == ((511+128) - 562))))
+            || (diffThirdDigitCol3[3] && (VGA_horzCoord == 32) && ((VGA_vertCoord == ((511+128) - 563))))
+            || (diffThirdDigitCol3[4] && (VGA_horzCoord == 32) && ((VGA_vertCoord == ((511+128) - 564))))
+            )
+            );
+            
+        wire[3:0] VGA_DIGIT_DIFF = CONDITION_FOR_DIGIT_DIFF ? 4'h7 : 0 ;
+    
+    //-------------------------------------------------------------------------
+    
     // COMBINE ALL OUTPUTS ON EACH CHANNEL
     wire[3:0] VGA_RED_CHAN = VGA_RED_GRID | VGA_RED_RAINBOW | VGA_TARGET_CURRENT | VGA_TARGET_1 | VGA_TARGET_3;
-    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW | VGA_TARGET_3 | VGA_TARGET_2 | VGA_TRIGGER_LINE | VGA_DIGIT; 
+    wire[3:0] VGA_GREEN_CHAN = VGA_GREEN_GRID | VGA_GREEN_WAVEFORM | VGA_GREEN_RAINBOW | VGA_TARGET_3 | VGA_TARGET_2 | VGA_TRIGGER_LINE | VGA_DIGIT | VGA_DIGIT_DIFF; 
     wire[3:0] VGA_BLUE_CHAN = VGA_BLUE_GRID | VGA_BLUE_RAINBOW | VGA_TARGET_1 | VGA_TARGET_4 | VGA_TARGET_2;  
 
 

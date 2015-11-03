@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date             : Tue Nov 03 13:41:00 2015
+| Date             : Tue Nov 03 17:08:03 2015
 | Host             : MSI running 64-bit major release  (build 9200)
 | Command          : report_power -file SCOPE_TOP_power_routed.rpt -pb SCOPE_TOP_power_summary_routed.pb
 | Design           : SCOPE_TOP
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.472 |
-| Dynamic (W)              | 0.399 |
+| Total On-Chip Power (W)  | 0.486 |
+| Dynamic (W)              | 0.413 |
 | Device Static (W)        | 0.073 |
 | Effective TJA (C/W)      | 5.0   |
 | Max Ambient (C)          | 97.6  |
@@ -49,20 +49,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.009 |        5 |       --- |             --- |
-| Slice Logic    |     0.101 |    48494 |       --- |             --- |
-|   LUT as Logic |     0.088 |    15597 |     20800 |           74.99 |
-|   F7/F8 Muxes  |     0.012 |     9080 |     32600 |           27.85 |
-|   CARRY4       |    <0.001 |      188 |      8150 |            2.31 |
-|   Register     |    <0.001 |    20897 |     41600 |           50.23 |
-|   Others       |     0.000 |       38 |       --- |             --- |
+| Clocks         |     0.013 |        5 |       --- |             --- |
+| Slice Logic    |     0.110 |    51945 |       --- |             --- |
+|   LUT as Logic |     0.097 |    17641 |     20800 |           84.81 |
+|   F7/F8 Muxes  |     0.011 |    10088 |     32600 |           30.94 |
+|   CARRY4       |     0.001 |      307 |      8150 |            3.77 |
+|   Register     |    <0.001 |    21020 |     41600 |           50.53 |
+|   Others       |     0.000 |       55 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |     0.159 |    29944 |       --- |             --- |
+| Signals        |     0.159 |    31193 |       --- |             --- |
 | MMCM           |     0.123 |        1 |         5 |           20.00 |
-| I/O            |     0.005 |       37 |       106 |           34.91 |
+| I/O            |     0.006 |       43 |       106 |           40.57 |
 | XADC           |     0.002 |        1 |       --- |             --- |
 | Static Power   |     0.073 |          |           |                 |
-| Total          |     0.472 |          |           |                 |
+| Total          |     0.486 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.280 |       0.270 |      0.010 |
+| Vccint    |       1.000 |     0.294 |       0.283 |      0.010 |
 | Vccaux    |       1.800 |     0.081 |       0.068 |      0.013 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -143,25 +143,34 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| SCOPE_TOP               |     0.399 |
+| SCOPE_TOP               |     0.413 |
 |   BTNC_DEBOUNCER        |    <0.001 |
-|   BTND_DEBOUNCER        |    <0.001 |
+|   BTND_DEBOUNCER        |     0.001 |
 |   BTNL_DEBOUNCER        |    <0.001 |
 |   BTNR_DEBOUNCER        |    <0.001 |
-|   BTNU_DEBOUNCER        |     0.057 |
+|   BTNU_DEBOUNCER        |     0.058 |
 |   FSM1                  |    <0.001 |
 |   GEN_CLK_SUBSAMPLE     |    <0.001 |
 |   PIXEL_CLOCK_GENERATOR |     0.124 |
 |     U0                  |     0.124 |
-|   SAMPLER               |     0.005 |
+|   SAMPLER               |     0.002 |
 |     XLXI_7              |     0.002 |
-|   VGA_CONTROLLER        |     0.143 |
-|   digit4                |     0.000 |
-|   digit5                |    <0.001 |
-|   digit6                |    <0.001 |
-|   digit7                |    <0.001 |
+|   VGA_CONTROLLER        |     0.128 |
+|   digit4                |    <0.001 |
+|   digit5                |     0.000 |
+|   digit6                |     0.000 |
+|   digit7                |     0.000 |
 |   digit8                |    <0.001 |
 |   digit9                |     0.000 |
+|   digitA                |     0.000 |
+|   digitB                |     0.000 |
+|   digitC                |     0.000 |
+|   digitD                |     0.000 |
+|   digitE                |     0.000 |
+|   digitF                |     0.000 |
+|   digitG                |     0.000 |
+|   digitH                |     0.000 |
+|   digitI                |     0.000 |
 +-------------------------+-----------+
 
 

@@ -2,8 +2,8 @@
 # Vivado v2015.3 (64-bit)
 # SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
 # IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
-# Start of session at: Tue Nov 03 13:33:15 2015
-# Process ID: 5764
+# Start of session at: Tue Nov 03 17:00:31 2015
+# Process ID: 1868
 # Current directory: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1
 # Command line: vivado.exe -log SCOPE_TOP.vds -mode batch -messageDb vivado.pb -notrace -source SCOPE_TOP.tcl
 # Log file: C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.runs/synth_1/SCOPE_TOP.vds
@@ -14,17 +14,26 @@ Command: synth_design -top SCOPE_TOP -part xc7a35tcpg236-3
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
-WARNING: [Synth 8-992] firstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:511]
-WARNING: [Synth 8-992] firstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:512]
-WARNING: [Synth 8-992] firstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:513]
-WARNING: [Synth 8-992] secondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:515]
-WARNING: [Synth 8-992] secondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:516]
-WARNING: [Synth 8-992] secondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:517]
-WARNING: [Synth 8-992] thirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:519]
-WARNING: [Synth 8-992] thirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:520]
-WARNING: [Synth 8-992] thirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:521]
+WARNING: [Synth 8-992] firstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:522]
+WARNING: [Synth 8-992] firstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:523]
+WARNING: [Synth 8-992] firstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:524]
+WARNING: [Synth 8-992] secondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:526]
+WARNING: [Synth 8-992] secondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:527]
+WARNING: [Synth 8-992] secondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:528]
+WARNING: [Synth 8-992] thirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:530]
+WARNING: [Synth 8-992] thirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:531]
+WARNING: [Synth 8-992] thirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:532]
+WARNING: [Synth 8-992] diffFirstDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:632]
+WARNING: [Synth 8-992] diffFirstDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:633]
+WARNING: [Synth 8-992] diffFirstDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:634]
+WARNING: [Synth 8-992] diffSecondDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:636]
+WARNING: [Synth 8-992] diffSecondDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:637]
+WARNING: [Synth 8-992] diffSecondDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:638]
+WARNING: [Synth 8-992] diffThirdDigitCol1 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:640]
+WARNING: [Synth 8-992] diffThirdDigitCol2 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:641]
+WARNING: [Synth 8-992] diffThirdDigitCol3 is already implicitly declared earlier [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:642]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 270.371 ; gain = 99.590
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 270.922 ; gain = 99.586
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'SCOPE_TOP' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clk_wiz_0.vhd:83]
@@ -158,11 +167,11 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dart
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:30]
 WARNING: [Synth 8-567] referenced signal 'colNum' should be on the sensitivity list [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:29]
 INFO: [Synth 8-256] done synthesizing module 'DigitDrawer' (11#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:23]
-WARNING: [Synth 8-3848] Net TEMP_MEM[0] in module/entity SCOPE_TOP does not have driver. [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:266]
+WARNING: [Synth 8-3848] Net TEMP_MEM[0] in module/entity SCOPE_TOP does not have driver. [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:276]
 INFO: [Synth 8-256] done synthesizing module 'SCOPE_TOP' (12#1) [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:23]
 WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 382.645 ; gain = 211.863
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 390.230 ; gain = 218.895
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -172,7 +181,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 382.645 ; gain = 211.863
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 390.230 ; gain = 218.895
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -191,39 +200,40 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 678.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 684.000 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-3
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/clock_divider.v:39]
-INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:284]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v:294]
 WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/FSM_inc_dec.v:47]
 WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/Dartteon/Desktop/ProjectFPGA/ProjectFPGA.srcs/sources_1/new/DigitDrawer.v:33]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:18 ; elapsed = 00:01:18 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:19 ; elapsed = 00:01:19 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SCOPE_TOP__GB0 |           1|     30696|
-|2     |SCOPE_TOP__GB1 |           1|     27862|
-|3     |SCOPE_TOP__GB2 |           1|      8848|
-|4     |SCOPE_TOP__GB3 |           1|     12166|
+|1     |SCOPE_TOP__GB0 |           1|     20492|
+|2     |SCOPE_TOP__GB1 |           1|     15126|
+|3     |SCOPE_TOP__GB2 |           1|     34992|
+|4     |SCOPE_TOP__GB3 |           1|     15581|
+|5     |SCOPE_TOP__GB4 |           1|      6960|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -231,6 +241,7 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 20    
+	   3 Input     32 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 10    
 	   2 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
@@ -242,21 +253,21 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 4     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 2565  
-	                4 Bit    Registers := 6     
+	                4 Bit    Registers := 9     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 10    
 +---Muxes : 
 	   8 Input     19 Bit        Muxes := 1     
-	   4 Input      5 Bit        Muxes := 72    
+	   4 Input      5 Bit        Muxes := 144   
 	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 9     
 	   2 Input      2 Bit        Muxes := 8     
-	   7 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 13    
-	  11 Input      1 Bit        Muxes := 9     
-	   4 Input      1 Bit        Muxes := 14    
-	   3 Input      1 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 23    
+	   2 Input      1 Bit        Muxes := 14    
+	  11 Input      1 Bit        Muxes := 18    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -268,6 +279,7 @@ Module SCOPE_TOP
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 20    
+	   3 Input     32 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 10    
 	   2 Input     12 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
@@ -279,18 +291,18 @@ Detailed RTL Component Info :
 	               12 Bit    Registers := 4     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 2564  
-	                4 Bit    Registers := 6     
+	                4 Bit    Registers := 9     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   8 Input     19 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 9     
 	   2 Input      2 Bit        Muxes := 3     
 	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 Module DigitDrawer__1 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -334,6 +346,60 @@ Detailed RTL Component Info :
 	  11 Input      1 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
 Module DigitDrawer__8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__9 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__10 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__11 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__12 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__13 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__14 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__15 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__16 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DigitDrawer__17 
 Detailed RTL Component Info : 
 +---Muxes : 
 	   4 Input      5 Bit        Muxes := 8     
@@ -412,72 +478,110 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:20 ; elapsed = 00:01:21 . Memory (MB): peak = 678.426 ; gain = 507.645
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:01:22 ; elapsed = 00:01:22 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3331] design SCOPE_TOP has unconnected port led[8]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:01:47 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished Cross Boundary Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:32 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:01:46 ; elapsed = 00:01:47 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished Parallel Reinference  : Time (s): cpu = 00:01:32 ; elapsed = 00:01:32 . Memory (MB): peak = 684.000 ; gain = 512.664
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SCOPE_TOP__GB0 |           1|     30696|
-|2     |SCOPE_TOP__GB1 |           1|     27862|
-|3     |SCOPE_TOP__GB2 |           1|      8848|
-|4     |SCOPE_TOP__GB3 |           1|     10951|
+|1     |SCOPE_TOP__GB0 |           1|     20492|
+|2     |SCOPE_TOP__GB1 |           1|     15126|
+|3     |SCOPE_TOP__GB2 |           1|     34992|
+|4     |SCOPE_TOP__GB3 |           1|     23038|
+|5     |SCOPE_TOP__GB4 |           1|      6960|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_3/\diffFirstDigit_reg[1] ' (FD) to 'i_3/\diffFirstDigit_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_3/\diffFirstDigit_reg[2] ' (FD) to 'i_3/\diffFirstDigit_reg[3] '
 INFO: [Synth 8-3886] merging instance 'i_3/\LOAD_VALUE_SUBSAMPLE_reg[18] ' (FD) to 'i_3/\LOAD_VALUE_SUBSAMPLE_reg[17] '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\LOAD_VALUE_SUBSAMPLE_reg[7] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit3/out_reg[4] ' (LD) to 'i_3/\digit3/out_reg[3] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit3/out_reg[3] ' (LD) to 'i_3/\digit3/out_reg[2] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit3/out_reg[2] ' (LD) to 'i_3/\digit3/out_reg[1] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit3/out_reg[1] ' (LD) to 'i_3/\digit1/out_reg[4] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit3/out_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit2/out_reg[4] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit2/out_reg[3] ' (LD) to 'i_3/\digit2/out_reg[2] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit2/out_reg[2] ' (LD) to 'i_3/\digit2/out_reg[1] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit2/out_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit1/out_reg[4] ' (LD) to 'i_3/\digit1/out_reg[2] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit1/out_reg[3] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit1/out_reg[2] ' (LD) to 'i_3/\digit1/out_reg[1] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit1/out_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit9/out_reg[4] ' (LD) to 'i_3/\digit9/out_reg[2] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit9/out_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit8/out_reg[3] ' (LD) to 'i_3/\digit8/out_reg[1] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit6/out_reg[4] ' (LD) to 'i_3/\digit6/out_reg[2] '
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/\digit6/out_reg[0] )
-INFO: [Synth 8-3886] merging instance 'i_3/\digit5/out_reg[3] ' (LD) to 'i_3/\digit5/out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_3/digitC/\out_reg[4] ' (LD) to 'i_3/digitC/\out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digitC/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digitB/\out_reg[3] ' (LD) to 'i_3/digitB/\out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_3/digitI/\out_reg[4] ' (LD) to 'i_3/digitI/\out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digitI/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digitH/\out_reg[3] ' (LD) to 'i_3/digitH/\out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_3/digitF/\out_reg[4] ' (LD) to 'i_3/digitF/\out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digitF/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digitE/\out_reg[3] ' (LD) to 'i_3/digitE/\out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_3/digit3/\out_reg[4] ' (LD) to 'i_3/digit3/\out_reg[3] '
+INFO: [Synth 8-3886] merging instance 'i_3/digit3/\out_reg[3] ' (LD) to 'i_3/digit3/\out_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_3/digit3/\out_reg[2] ' (LD) to 'i_3/digit3/\out_reg[1] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit3/\out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit2/\out_reg[4] )
+INFO: [Synth 8-3886] merging instance 'i_3/digit2/\out_reg[3] ' (LD) to 'i_3/digit2/\out_reg[2] '
+INFO: [Synth 8-3886] merging instance 'i_3/digit2/\out_reg[2] ' (LD) to 'i_3/digit2/\out_reg[1] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit2/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digit1/\out_reg[4] ' (LD) to 'i_3/digit1/\out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit1/\out_reg[3] )
+INFO: [Synth 8-3886] merging instance 'i_3/digit1/\out_reg[2] ' (LD) to 'i_3/digit1/\out_reg[1] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit1/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digit9/\out_reg[4] ' (LD) to 'i_3/digit9/\out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit9/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digit8/\out_reg[3] ' (LD) to 'i_3/digit8/\out_reg[1] '
+INFO: [Synth 8-3886] merging instance 'i_3/digit6/\out_reg[4] ' (LD) to 'i_3/digit6/\out_reg[2] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_3/digit6/\out_reg[0] )
+INFO: [Synth 8-3886] merging instance 'i_3/digit5/\out_reg[3] ' (LD) to 'i_3/digit5/\out_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_3/\VGA_BLUE_reg[0] ' (FD) to 'i_3/\VGA_BLUE_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_3/\VGA_BLUE_reg[1] ' (FD) to 'i_3/\VGA_BLUE_reg[2] '
 INFO: [Synth 8-3886] merging instance 'i_3/\VGA_GREEN_reg[0] ' (FD) to 'i_3/\VGA_GREEN_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_3/\VGA_GREEN_reg[1] ' (FD) to 'i_3/\VGA_GREEN_reg[2] '
 INFO: [Synth 8-3886] merging instance 'i_3/\VGA_RED_reg[0] ' (FD) to 'i_3/\VGA_RED_reg[1] '
 INFO: [Synth 8-3886] merging instance 'i_3/\VGA_RED_reg[1] ' (FD) to 'i_3/\VGA_RED_reg[2] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit4/out_reg[4] ' (LD) to 'i_3/\digit6/out_reg[2] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit4/out_reg[0] ' (LD) to 'i_3/\digit5/out_reg[0] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit9/out_reg[2] ' (LD) to 'i_3/\digit7/out_reg[4] '
-INFO: [Synth 8-3886] merging instance 'i_3/\digit8/out_reg[0] ' (LD) to 'i_3/\digit7/out_reg[0] '
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__1.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__1.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__2.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__4.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__4.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__5.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__7.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__7.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__8.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__10.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__10.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__11.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__13.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__13.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__14.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__16.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__16.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[2] ) is unused and will be removed from module DigitDrawer__16.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[1] ) is unused and will be removed from module DigitDrawer__16.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__16.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer__17.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer__17.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[2] ) is unused and will be removed from module DigitDrawer__17.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[1] ) is unused and will be removed from module DigitDrawer__17.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer__17.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[4] ) is unused and will be removed from module DigitDrawer.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[3] ) is unused and will be removed from module DigitDrawer.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[2] ) is unused and will be removed from module DigitDrawer.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[1] ) is unused and will be removed from module DigitDrawer.
+WARNING: [Synth 8-3332] Sequential element (\out_reg[0] ) is unused and will be removed from module DigitDrawer.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:02:04 ; elapsed = 00:02:04 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 684.000 ; gain = 512.664
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:02:04 ; elapsed = 00:02:04 . Memory (MB): peak = 678.426 ; gain = 507.645
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:51 ; elapsed = 00:01:52 . Memory (MB): peak = 684.000 ; gain = 512.664
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SCOPE_TOP__GB0 |           1|     30696|
-|2     |SCOPE_TOP__GB1 |           1|     27862|
-|3     |SCOPE_TOP__GB2 |           1|      8848|
-|4     |SCOPE_TOP__GB3 |           1|      6728|
+|1     |SCOPE_TOP__GB0 |           1|     20492|
+|2     |SCOPE_TOP__GB1 |           1|     15126|
+|3     |SCOPE_TOP__GB2 |           1|     34992|
+|4     |SCOPE_TOP__GB3 |           1|      9248|
+|5     |SCOPE_TOP__GB4 |           1|      6960|
 +------+---------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -486,28 +590,59 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:14 ; elapsed = 00:02:15 . Memory (MB): peak = 721.121 ; gain = 550.340
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:02:03 . Memory (MB): peak = 751.699 ; gain = 580.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 791.867 ; gain = 621.086
+Finished Timing Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 832.172 ; gain = 660.836
 ---------------------------------------------------------------------------------
-Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 791.867 ; gain = 621.086
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 832.172 ; gain = 660.836
 
 Report RTL Partitions: 
 +------+---------------+------------+----------+
 |      |RTL Partition  |Replication |Instances |
 +------+---------------+------------+----------+
-|1     |SCOPE_TOP__GB0 |           1|     30696|
-|2     |SCOPE_TOP__GB1 |           1|     27862|
-|3     |SCOPE_TOP__GB2 |           1|      8848|
-|4     |SCOPE_TOP__GB3 |           1|      6724|
+|1     |SCOPE_TOP__GB0 |           1|     20492|
+|2     |SCOPE_TOP__GB1 |           1|     15126|
+|3     |SCOPE_TOP__GB2 |           1|     34992|
+|4     |SCOPE_TOP__GB3 |           1|      9241|
+|5     |SCOPE_TOP__GB4 |           1|      6960|
 +------+---------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:23 ; elapsed = 00:02:24 . Memory (MB): peak = 791.867 ; gain = 621.086
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 832.172 ; gain = 660.836
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance '\digit8/out_reg[0] ' (LD) to '\digit7/out_reg[0] '
+INFO: [Synth 8-3886] merging instance '\digit5/out_reg[0] ' (LD) to '\digit4/out_reg[0] '
+INFO: [Synth 8-3886] merging instance '\digitC/out_reg[3] ' (LD) to '\digitA/out_reg[2] '
+INFO: [Synth 8-3886] merging instance '\digitG/out_reg[4] ' (LD) to '\digitI/out_reg[2] '
+INFO: [Synth 8-3886] merging instance '\digitF/out_reg[2] ' (LD) to '\digitD/out_reg[4] '
+INFO: [Synth 8-3886] merging instance '\digitB/out_reg[4] ' (LD) to '\digitB/out_reg[0] '
+INFO: [Synth 8-3886] merging instance '\digitB/out_reg[0] ' (LD) to '\digitA/out_reg[3] '
+INFO: [Synth 8-3886] merging instance '\digitC/out_reg[1] ' (LD) to '\digitA/out_reg[4] '
+INFO: [Synth 8-3886] merging instance '\digitH/out_reg[0] ' (LD) to '\digitG/out_reg[0] '
+INFO: [Synth 8-3886] merging instance '\digitA/out_reg[4] ' (LD) to '\digitC/out_reg[2] '
+INFO: [Synth 8-3886] merging instance '\digit7/out_reg[4] ' (LD) to '\digit9/out_reg[2] '
+INFO: [Synth 8-3886] merging instance '\digitE/out_reg[0] ' (LD) to '\digitD/out_reg[0] '
+INFO: [Synth 8-3886] merging instance '\digit6/out_reg[2] ' (LD) to '\digit4/out_reg[4] '
+INFO: [Synth 8-3886] merging instance '\digitA/out_reg[3] ' (LD) to '\digitA/out_reg[0] '
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\digitA/out_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (\digitB/out_reg[4] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digit8/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digit5/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitC/out_reg[3] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitG/out_reg[4] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitF/out_reg[2] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitA/out_reg[3] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitB/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitA/out_reg[4] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitC/out_reg[1] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitH/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digit7/out_reg[4] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitE/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digit6/out_reg[2] ) is unused and will be removed from module SCOPE_TOP.
+WARNING: [Synth 8-3332] Sequential element (\digitA/out_reg[0] ) is unused and will be removed from module SCOPE_TOP.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Technology Mapping : Time (s): cpu = 00:02:31 ; elapsed = 00:02:32 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -531,7 +666,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:42 ; elapsed = 00:02:43 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished IO Insertion : Time (s): cpu = 00:02:35 ; elapsed = 00:02:36 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -544,7 +679,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:42 ; elapsed = 00:02:43 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:35 ; elapsed = 00:02:36 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -556,25 +691,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:46 ; elapsed = 00:02:47 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:46 ; elapsed = 00:02:47 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:39 ; elapsed = 00:02:40 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:47 ; elapsed = 00:02:48 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:40 ; elapsed = 00:02:41 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:47 ; elapsed = 00:02:49 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -591,20 +726,20 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     4|
-|2     |CARRY4     |   188|
-|3     |LUT1       |   386|
-|4     |LUT2       |   146|
-|5     |LUT3       |  5237|
-|6     |LUT4       |   172|
-|7     |LUT5       |   136|
-|8     |LUT6       | 12459|
+|2     |CARRY4     |   307|
+|3     |LUT1       |   440|
+|4     |LUT2       |   282|
+|5     |LUT3       |  5424|
+|6     |LUT4       |   358|
+|7     |LUT5       |   223|
+|8     |LUT6       | 14026|
 |9     |MMCME2_ADV |     1|
-|10    |MUXF7      |  6127|
-|11    |MUXF8      |  2953|
+|10    |MUXF7      |  6800|
+|11    |MUXF8      |  3288|
 |12    |XADC       |     1|
-|13    |FDRE       | 20875|
-|14    |LD         |    22|
-|15    |IBUF       |    12|
+|13    |FDRE       | 20973|
+|14    |LD         |    47|
+|15    |IBUF       |    18|
 |16    |OBUF       |    25|
 |17    |OBUFT      |     1|
 +------+-----------+------+
@@ -613,45 +748,55 @@ Report Instance Areas:
 +------+------------------------+------------------------+------+
 |      |Instance                |Module                  |Cells |
 +------+------------------------+------------------------+------+
-|1     |top                     |                        | 48745|
+|1     |top                     |                        | 52218|
 |2     |  BTNC_DEBOUNCER        |switch_debouncer        |    76|
-|3     |  BTND_DEBOUNCER        |switch_debouncer_fast   |    78|
+|3     |  BTND_DEBOUNCER        |switch_debouncer_fast   |    77|
 |4     |  BTNL_DEBOUNCER        |switch_debouncer_0      |    71|
 |5     |  BTNR_DEBOUNCER        |switch_debouncer_1      |    70|
-|6     |  BTNU_DEBOUNCER        |switch_debouncer_fast_2 |  4832|
+|6     |  BTNU_DEBOUNCER        |switch_debouncer_fast_2 |  4831|
 |7     |  FSM1                  |FSM_inc_dec             |     9|
 |8     |  GEN_CLK_SUBSAMPLE     |clock_divider           |    72|
 |9     |  PIXEL_CLOCK_GENERATOR |clk_wiz_0               |     3|
 |10    |    U0                  |clk_wiz_0_clk_wiz       |     3|
-|11    |  SAMPLER               |ADC_sampler             |    24|
+|11    |  SAMPLER               |ADC_sampler             |     9|
 |12    |    XLXI_7              |xadc_wiz_0              |     1|
-|13    |  VGA_CONTROLLER        |vga_ctrl                | 17687|
-|14    |  digit4                |DigitDrawer             |     6|
-|15    |  digit5                |DigitDrawer_3           |    13|
-|16    |  digit6                |DigitDrawer_4           |     7|
-|17    |  digit7                |DigitDrawer_5           |    13|
-|18    |  digit8                |DigitDrawer_6           |     9|
-|19    |  digit9                |DigitDrawer_7           |     4|
+|13    |  VGA_CONTROLLER        |vga_ctrl                | 15426|
+|14    |  digit4                |DigitDrawer             |    13|
+|15    |  digit5                |DigitDrawer_3           |     6|
+|16    |  digit6                |DigitDrawer_4           |     4|
+|17    |  digit7                |DigitDrawer_5           |     9|
+|18    |  digit8                |DigitDrawer_6           |    10|
+|19    |  digit9                |DigitDrawer_7           |     6|
+|20    |  digitA                |DigitDrawer_8           |     4|
+|21    |  digitB                |DigitDrawer_9           |     5|
+|22    |  digitC                |DigitDrawer_10          |     2|
+|23    |  digitD                |DigitDrawer_11          |    11|
+|24    |  digitE                |DigitDrawer_12          |     6|
+|25    |  digitF                |DigitDrawer_13          |     4|
+|26    |  digitG                |DigitDrawer_14          |     9|
+|27    |  digitH                |DigitDrawer_15          |     6|
+|28    |  digitI                |DigitDrawer_16          |     6|
 +------+------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:47 ; elapsed = 00:02:49 . Memory (MB): peak = 838.098 ; gain = 667.316
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 859.871 ; gain = 688.535
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:27 ; elapsed = 00:02:40 . Memory (MB): peak = 838.098 ; gain = 354.836
-Synthesis Optimization Complete : Time (s): cpu = 00:02:48 ; elapsed = 00:02:49 . Memory (MB): peak = 838.098 ; gain = 667.316
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:19 ; elapsed = 00:02:33 . Memory (MB): peak = 859.871 ; gain = 379.070
+Synthesis Optimization Complete : Time (s): cpu = 00:02:40 ; elapsed = 00:02:42 . Memory (MB): peak = 859.871 ; gain = 688.535
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 224 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 374 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 5 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 22 instances were transformed.
-  LD => LDCE: 22 instances
+  A total of 47 instances were transformed.
+  LD => LDCE: 42 instances
+  LD => LDCE (inverted pins: G): 5 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-89 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+110 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:58 ; elapsed = 00:02:59 . Memory (MB): peak = 838.098 ; gain = 650.617
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 838.098 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 838.098 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 03 13:36:23 2015...
+synth_design: Time (s): cpu = 00:02:51 ; elapsed = 00:02:52 . Memory (MB): peak = 859.871 ; gain = 672.840
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 859.871 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.245 . Memory (MB): peak = 859.871 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 03 17:03:33 2015...
