@@ -1,4 +1,4 @@
-# Oscilloscope Implementation of the FPGA
+# Project FPGA
 
 ###Context
 Project for NUS' EE2024 that required us to use an FPGA to build an oscilloscope.
