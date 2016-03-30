@@ -1,7 +1,7 @@
-# FPGAProject
+# Oscilloscope Implementation of the FPGA
 
 ###Context
-Project for EE2024 that required us to use an FPGA to build an oscilloscope.
+Project for NUS' EE2024 that required us to use an FPGA to build an oscilloscope.
 
 ###Implementations
 Most of the code is in FPGAProject/ProjectFPGA.srcs/sources_1/imports/skeleton_sources/SCOPE_TOP.v
